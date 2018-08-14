@@ -5,12 +5,12 @@
                 color: white;
                 background-color: black;
             }
-            
+
             html {
                 width: 100%;
                 height: 100%;
             }
-            
+
             h1,
             h2,
             h4,
@@ -22,7 +22,7 @@
                 font-weight: 700;
                 letter-spacing: 1px;
             }
-            
+
             h3 {
                 margin: 0 0 15px;
                 text-transform: uppercase;
@@ -30,13 +30,13 @@
                 font-weight: 700;
                 letter-spacing: 1px;
             }
-            
+
             p {
                 margin: 0 0 25px;
                 font-size: 18px;
                 line-height: 1.5;
             }
-            
+
             @media (min-width: 768px) {
                 p {
                     margin: 0 0 35px;
@@ -44,24 +44,24 @@
                     line-height: 1.6;
                 }
             }
-            
+
             a {
                 color: #42DCA3;
                 -webkit-transition: all 0.2s ease-in-out;
                 -moz-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
             }
-            
+
             a:hover,
             a:focus {
                 text-decoration: none;
                 color: #1d9b6c;
             }
-            
+
             .light {
                 font-weight: 400;
             }
-            
+
             .navbar-custom {
                 margin-bottom: 0;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,60 +69,60 @@
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 background-color: black;
             }
-            
+
             .navbar-custom .navbar-toggle {
                 color: white;
                 background-color: rgba(255, 255, 255, 0.2);
                 font-size: 12px;
             }
-            
+
             .navbar-custom .navbar-toggle:focus,
             .navbar-custom .navbar-toggle:active {
                 outline: none;
             }
-            
+
             .navbar-custom .navbar-brand {
                 font-weight: 700;
             }
-            
+
             .navbar-custom .navbar-brand:focus {
                 outline: none;
             }
-            
+
             .navbar-custom a {
                 color: white;
             }
-            
+
             .navbar-custom .nav li a {
                 -webkit-transition: background 0.3s ease-in-out;
                 -moz-transition: background 0.3s ease-in-out;
                 transition: background 0.3s ease-in-out;
             }
-            
+
             .navbar-custom .nav li a:hover {
                 color: rgba(255, 255, 255, 0.8);
                 outline: none;
                 background-color: transparent;
             }
-            
+
             .navbar-custom .nav li a:focus,
             .navbar-custom .nav li a:active {
                 outline: none;
                 background-color: transparent;
             }
-            
+
             .navbar-custom .nav li.active {
                 outline: none;
             }
-            
+
             .navbar-custom .nav li.active a {
                 background-color: rgba(255, 255, 255, 0.3);
             }
-            
+
             .navbar-custom .nav li.active a:hover {
                 color: white;
             }
-            
+
             @media (min-width: 768px) {
                 .navbar-custom {
                     padding: 20px 0;
@@ -139,7 +139,7 @@
                     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
                 }
             }
-            
+
             .intro {
                 display: table;
                 width: 100%;
@@ -147,39 +147,39 @@
                 padding: 100px 0;
                 text-align: center;
                 color: white;
-                background: url(../img/castellers-small.jpg) no-repeat top center scroll;
+                background: url(../img/cctv-small.jpg) no-repeat top center scroll;
                 background-color: black;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 background-size: cover;
                 -o-background-size: cover;
             }
-            
+
             .intro .intro-body {
                 display: table-cell;
                 vertical-align: middle;
             }
-            
+
             .intro .intro-body .brand-heading {
                 font-size: 40px;
             }
-            
+
             .intro .intro-body .intro-text {
                 font-size: 18px;
             }
-            
+
             .intro .intro-body .location-text {
                 font-size: 14px;
                 font-style: italic;
             }
-            
+
             @media (min-width: 491px) {
                 .intro {
-                    background: url(../img/castellers.jpg) no-repeat top right scroll;
+                    background: url(../img/cctv.jpg) no-repeat top right scroll;
                     background-size: cover;
                 }
             }
-            
+
             @media (min-width: 768px) {
                 .intro {
                     height: 100%;
@@ -196,7 +196,7 @@
                     font-style: italic;
                 }
             }
-            
+
             @-webkit-keyframes pulse {
                 0 {
                     -webkit-transform: scale(1);
@@ -211,7 +211,7 @@
                     transform: scale(1);
                 }
             }
-            
+
             @-moz-keyframes pulse {
                 0 {
                     -moz-transform: scale(1);
@@ -226,11 +226,11 @@
                     transform: scale(1);
                 }
             }
-            
+
             .content-section {
                 padding-top: 100px;
             }
-            
+
             @media (min-width: 767px) {
                 .content-section {
                     padding-top: 250px;
@@ -243,39 +243,39 @@
                     margin-top: 250px;
                 }
             }
-            
+
             footer {
                 padding: 50px 0;
             }
-            
+
             footer p {
                 margin: 0;
             }
-            
+
             ::-moz-selection {
                 text-shadow: none;
                 background: #fcfcfc;
                 background: rgba(255, 255, 255, 0.2);
             }
-            
+
             ::selection {
                 text-shadow: none;
                 background: #fcfcfc;
                 background: rgba(255, 255, 255, 0.2);
             }
-            
+
             img::selection {
                 background: transparent;
             }
-            
+
             img::-moz-selection {
                 background: transparent;
             }
-            
+
             body {
                 webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
             }
-            
+
             #about,
             #schedule,
             #dates,
@@ -286,7 +286,7 @@
                 color: white;
                 background-color: black;
             }
-            
+
             #speakers,
             #organizers {
                 width: 100%;
@@ -294,13 +294,13 @@
                 color: black;
                 background-color: darkgrey;
             }
-            
+
             li.speaker {
                 background-color: darkgrey;
                 font-size: 18px;
                 border-color: darkgrey;
             }
-            
+
             @media (min-width: 768px) {
                 li.speaker {
                     background-color: darkgrey;
@@ -308,13 +308,13 @@
                     border-color: darkgrey;
                 }
             }
-            
+
             li.organizer {
                 background-color: darkgrey;
                 font-size: 18px;
                 border-color: darkgrey;
             }
-            
+
             @media (min-width: 768px) {
                 li.organizer {
                     background-color: darkgrey;
@@ -322,21 +322,21 @@
                     border-color: darkgrey;
                 }
             }
-            
+
             .attribution {
                 font-size: 10px;
                 font-weight: lighter;
             }
-            
+
             .hiddenRow {
                 padding: 0 !important;
             }
-            
+
             .link-paper {
                 color: white;
                 font-weight: 400;
             }
-            
+
             .btn {
                 text-transform: uppercase;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -346,13 +346,13 @@
                 transition: all 0.3s ease-in-out;
                 border-radius: 0;
             }
-            
+
             .btn-default {
                 border: 1px solid #42DCA3;
                 color: #42DCA3;
                 background-color: transparent;
             }
-            
+
             .btn-default:hover,
             .btn-default:focus {
                 border: 1px solid #42DCA3;
@@ -360,13 +360,13 @@
                 color: black;
                 background-color: #42DCA3;
             }
-            
+
             .panel-paper {
                 border-color: black;
                 text-align: left;
                 margin-bottom: 12px;
             }
-            
+
             .panel-paper > .panel-paper-body {
                 background-color: darkgrey;
                 color: black;
@@ -376,32 +376,32 @@
                 padding-bottom: 10px;
                 padding-top: 10px;
             }
-            
+
             .panel-paper > .panel-paper-footer {
                 background-color: white;
                 color: black;
                 font-size: 12px;
             }
-            
+
             .paper-title {
                 font-weight: bold;
                 font-style: italic;
                 color: black;
             }
-            
+
             .table > tbody > tr > td.slot {
                 text-align: left;
                 padding-left: 30px;
             }
-            
+
             td.talk {
                 font-weight: bold;
             }
-            
+
             td.break {
                 font-style: italic;
             }
-            
+
             div.talk-abstract {
                 background-color: darkgrey;
                 color: black;
@@ -412,12 +412,12 @@
                 padding-left: 35px;
                 padding-right: 35px;
             }
-            
+
             .table > tbody > tr > td.time {
                 font-size: 14px;
                 vertical-align: middle;
             }
-            
+
             table.schedule {
                 font-size: 18px;
             }

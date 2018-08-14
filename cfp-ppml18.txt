@@ -1,0 +1,60 @@
+Call for papers: Privacy Preserving Machine Learning -- NIPS 2018 Workshop
+Montreal, December 8, 2018 
+Website: https://ppml-workshop.github.io/ppml/
+
+
+# Description
+
+This one day workshop will focus on privacy preserving techniques for training, inference, and disclosure in large scale data analysis, both in the distributed and centralized settings. We have observed increasing interest of the ML community in leveraging cryptographic techniques such as Multi-Party Computation (MPC) and Homomorphic Encryption (HE) for privacy preserving training and inference, as well as Differential Privacy (DP) for disclosure. Simultaneously, the systems security and cryptography community has proposed various secure frameworks for ML. We encourage both theory and application-oriented submissions exploring a range of approaches, including:
+
+- secure multi-party computation techniques for ML
+- homomorphic encryption techniques for ML
+- hardware-based approaches to privacy preserving ML
+- centralized and decentralized protocols for learning on encrypted data
+- differential privacy: theory, applications, and implementations
+- statistical notions of privacy including relaxations of differential privacy
+- empirical and theoretical comparisons between different notions of privacy
+- trade-offs between privacy and utility
+
+We think it will be very valuable to have a forum to unify different perspectives and start a discussion about the relative merits of each approach. The workshop will also serve as a venue for networking people from different communities interested in this problem, and hopefully foster fruitful long-term collaboration.
+
+
+# Submission Instructions
+
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references) and adhere to the NIPS format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
+
+- Submission url: https://easychair.org/conferences/?conf=ppml18
+- Submission deadline: September 21, 2018 (11:59pm AoE)
+- Notification of acceptance: October 12, 2018
+- NIPS early registration deadline: October 24, 2018
+
+
+# Program Committee
+
+- Pauline Anthonysamy (Google)
+- Borja de Balle Pigem (Amazon)
+- Keith Bonawitz (Google)
+- Emiliano de Cristofaro (University College London)
+- David Evans (University of Virginia)
+- Irene Giacomelli (Wisconsin University)
+- Nadin Kokciyan (King's College London)
+- Kim Laine (Microsoft Research)
+- Payman Mohassel (Visa Research)
+- Catuscia Palamidessi (Ecole Polytechnique & INRIA)
+- Mijung Park (Max Planck Institute for Intelligent Systems)
+- Benjamin Rubinstein (University of Melbourne)
+- Anand Sarwate (Rutgers University)
+- Philipp Schoppmann (HU Berlin)
+- Nigel Smart (KU Leuven)
+- Carmela Troncoso (EPFL)
+- Pinar Yolum (Utrecht University)
+- Samee Zahur (University of Virginia)
+
+
+# Organizers
+
+- Adria Gascon (Alan Turing Institute & Edinburgh)
+- Niki Kilbertus (MPI for Intelligent Systems & Cambridge)
+- Olya Ohrimenko (Microsoft Research)
+- Mariana Raykova (Yale)
+- Adrian Weller (Alan Turing Institute & Cambridge)
