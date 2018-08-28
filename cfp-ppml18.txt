@@ -24,9 +24,8 @@ We think it will be very valuable to have a forum to unify different perspective
 Submissions in the form of extended abstracts must be at most 4 pages long (not including references) and adhere to the NIPS format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
 
 - Submission url: https://easychair.org/conferences/?conf=ppml18
-- Submission deadline: September 21, 2018 (11:59pm AoE)
-- Notification of acceptance: October 12, 2018
-- NIPS early registration deadline: October 24, 2018
+- Submission deadline: October 8, 2018 (11:59pm AoE)
+- Notification of acceptance: November 1, 2018
 
 
 # Program Committee
