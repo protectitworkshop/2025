@@ -84,7 +84,7 @@
                         </p>
                         <p class="location-text">
                             Palais des Congrès de Montréal
-                            <br /> Room TBA
+                            <br /> Room: 512CDGH
                         </p>
                     </div>
                 </div>
@@ -164,24 +164,302 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h2>Schedule</h2>
-                TBA
-                <!-- <table class="table schedule">
+                <table class="table schedule">
                     <tbody>
-                        <tr>
-                            <td class="time">8.45</td>
-                            <td class="slot">Welcome and Introduction</td>
-                        </tr>
-                        <tr>
-                            <td class="time">9.00</td>
-                            <td class="slot talk"><a href="#tabs2" data-toggle="collapse" class="accordion-toggle">Speaker &mdash; Title</a> &nbsp;&nbsp;<a href="slides/slides.pdf" class="link-paper">[slides]</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract" id="tabs2">Abstract</div>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td class="time">8:30</td>
+                        <td class="slot">Welcome and Introduction</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">8:50</td>
+                        <td class="slot talk">
+                        Invited talk:
+                        <a href="#tabs2" data-toggle="collapse" class="accordion-toggle">
+                        Ian Goodfellow
+                        &mdash;
+                        TBA
+                        </a> &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs2">
+                            Coming soon
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">9:40</td>
+                        <td class="slot talk">
+                        Invited talk:
+                        <a href="#tabs3" data-toggle="collapse" class="accordion-toggle">
+                        Shafi Goldwasser
+                        &mdash;
+                        Machine Learning and Cryptography: Challenges and Opportunities
+                        </a> &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs3">
+                            At the mid eighties researchers in computational learning theory pointed the way to  examples of hard learning tasks such as learning parity with noise (LPN) and learning with errors (LWE) which have been extremely useful for building sophisticated cryptographic primitives such as homomorphic encryption which are unbreakable if LPN and LWE are hard to learn.
+                            <br/>
+                            Today, with the rise of machine learning algorithms that use large amounts of data to come up with procedures which have the potential to replace human decision processes, cryptography, in turn,  stands to provide machine learning, tools for keeping data private during both training and inference phases of ML and to provide methods to verify adherence of models with data. These promise to be important steps in ensuring the safe transition of  power from human to algorithmic decision making.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">10:30</td>
+                        <td class="break">Coffee break</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">11:00</td>
+                        <td class="slot talk"><a href="#tabs4" data-toggle="collapse" class="accordion-toggle">
+                        Privacy Amplification by Iteration
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs4">
+                            Many commonly used learning algorithms work by iteratively updating an intermediate solution using one or a few data points in each iteration. Analysis of differential privacy for such algorithms often involves ensuring privacy of each step and then reasoning about the cumulative privacy cost of the algorithm. This is enabled by composition theorems for differential privacy that allow releasing of all the intermediate results. In this work, we demonstrate that for contractive iterations, not releasing the intermediate results strongly amplifies the privacy guarantees.
+                            <br/>
+                            We describe several applications of this new analysis technique to solving convex optimization problems via noisy stochastic gradient descent. For example, we demonstrate that a relatively small number of non-private data points from the same distribution can be used to close the gap between private and non-private convex optimization. In addition, we demonstrate that we can achieve guarantees similar to those obtainable using the privacy-amplification-by-sampling technique in several natural settings where that technique cannot be applied.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">11:15</td>
+                        <td class="slot talk"><a href="#tabs5" data-toggle="collapse" class="accordion-toggle">
+                        Subsampled Renyi Differential Privacy and Analytical Moments Accountant
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs5">
+                            We study the problem of subsampling in differential privacy (DP), a question that is the centerpiece behind many successful differentially private machine learning algorithms. Specifically, we provide a tight upper bound on the Renyi Differential Privacy (RDP) parameters for algorithms that: (1) subsample the dataset, and then (2) applies a randomized mechanism M to the subsample, in terms of the RDP parameters of M and the subsampling probability parameter. Our results generalize the moments accounting technique, developed by Abadi et al. [CCS'16] for the Gaussian mechanism, to any subsampled RDP mechanism.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">11:30</td>
+                        <td class="slot talk"><a href="#tabs6" data-toggle="collapse" class="accordion-toggle">
+                        The Power of The Hybrid Model for Mean Estimation
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs6">
+                            In this work we explore the power of the hybrid model of differential privacy (DP) proposed in~\cite{blender}, where some users desire the guarantees of the local model of DP and others are content with receiving the trusted curator model guarantees. In particular, we study the accuracy of mean estimation algorithms for arbitrary distributions in bounded support. We show that a hybrid mechanism which combines the sample mean estimates obtained from the two groups in an optimally weighted convex combination performs a constant factor better for a wide range of sample sizes than natural benchmarks. We analyze how this improvement factor is parameterized by the problem setting and how it varies with sample size.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">11:45</td>
+                        <td class="slot talk"><a href="#tabs7" data-toggle="collapse" class="accordion-toggle">
+                        DP-MAC: The Differentially Private Method of Auxiliary Coordinates for Deep Learning
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs7">
+                            Developing a differentially private deep learning algorithm is challenging, due to the difficulty in analyzing the sensitivity of objective functions that are typically used to train deep neural networks. Many existing methods resort to the stochastic gradient descent algorithm and apply a pre-defined sensitivity to the gradients for privatizing weights. However, their slow convergence typically yields a high cumulative privacy loss. Here, we take a different route by employing the method of auxiliary coordinates, which allows us to independently update the weights per layer by optimizing a per-layer objective function. This objective function can be well approximated by a low-order Taylor's expansion, in which sensitivity analysis becomes tractable. We perturb the coefficients of the expansion for privacy, which we optimize using more advanced optimization routines than SGD for faster convergence. We empirically show that our algorithm provides a decent trained model quality under a modest privacy budget.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">12:00</td>
+                        <td class="break">Lunch break</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">13:30</td>
+                        <td class="slot talk">
+                        Invited talk:
+                        <a href="#tabs8" data-toggle="collapse" class="accordion-toggle">
+                        Kamalika Chaudhuri
+                        &mdash;
+                        Challenges in the Privacy-Preserving Analysis of Structured Data
+                        </a> &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs8">
+                            Much data analysis today is done on sensitive data, and particular privacy challenges arise when this data is sensitive and structured. In this talk I will describe two such challenges in the privacy-preserving analysis of complex, structured data that we have been working on in my group.
+                            <br/>
+                            The first is continual release of graph statistics in an online manner from an expanding graph, which is motivated by a problem in HIV epidemiology. Even though node differentially private release of graph statistics is highly challenging, here we will describe how we can get a differentially private solution for this problem that performs better than the natural sequential composition baseline.
+                            <br/>
+                            Next, I will talk about analysis of sensitive structured, correlated data, while still preserving the privacy of events in the data. Differential privacy does not adequately address privacy issues in this kind of data, and hence will look at a form of inferential privacy, called Pufferfish, that is more appropriate. We will provide mechanisms, establish their composition properties, and finally evaluate them on real data on physical activity measurements across time.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">14:20</td>
+                        <td class="slot talk">
+                        Invited talk:
+                        <a href="#tabs9" data-toggle="collapse" class="accordion-toggle">
+                        Adam Smith
+                        &mdash;
+                        TBA
+                        </a> &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs9">
+                            Coming soon
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">15:10</td>
+                        <td class="break">Coffee break</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">15:30</td>
+                        <td class="slot talk"><a href="#tabs10" data-toggle="collapse" class="accordion-toggle">
+                        Amplification by Shuffling: From Local to Central Differential Privacy via Anonymity
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs10">
+                            Sensitive statistics are often collected across sets of users, with repeated collection of reports done over time. For example, trends in users' private preferences or software usage may be monitored via such reports. We study the collection of such statistics in the local differential privacy (LDP) model, when each user's value may change only a small number of times. We describe an algorithm whose privacy cost is polylogarithmic in the number of times the statistic is collected.
+                            <br/>
+                            More fundamentally---by building on anonymity of the users' reports---we also demonstrate how the privacy cost of our LDP algorithm can actually be much lower when viewed in the central model of differential privacy. We show, via a new and general technique, that any permutation-invariant algorithm satisfying $\varepsilon$-local differential privacy will satisfy $(O(\varepsilon \sqrt{\log \frac 1 \delta} / \sqrt{n}), \delta)$-central differential privacy. In the process, we clarify how the high noise and $\sqrt{n}$ overhead of LDP protocols is a consequence of them being significantly more private in the central model. As a final, practical corollary, our results also imply that industrial deployments of LDP mechanism may have much lower privacy cost than their advertised $\varepsilon$ would indicate---at least if reports are anonymized.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">15:45</td>
+                        <td class="slot talk"><a href="#tabs11" data-toggle="collapse" class="accordion-toggle">
+                        Slalom: Fast, Verifiable and Private Execution of Neural Networks in Trusted Hardware
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs11">
+                            As Machine Learning (ML) gets applied to security-critical or sensitive domains, there is a growing need for integrity and privacy for outsourced ML computations. A pragmatic solution comes from Trusted Execution Environments (TEEs), which use hardware and software protections to isolate sensitive computations from the untrusted software stack. However, these isolation guarantees come at a price in performance, compared to untrusted alternatives. This paper initiates the study of high performance execution of Deep Neural Networks (DNNs) in TEEs by efficiently partitioning DNN computations between trusted and untrusted devices. Building upon an efficient outsourcing scheme for matrix multiplication, we propose Slalom, a framework that securely delegates execution of all linear layers in a DNN from a TEE (e.g., Intel SGX or Sanctum) to a faster, yet untrusted, co-located processor. We evaluate Slalom by executing DNNs in an Intel SGX enclave, which selectively delegates work to an untrusted GPU. For two canonical DNNs, VGG16 and MobileNet, we obtain 20× and 6× increases in throughput for verifiable inference, and 11× and 4× for verifiable and private inference.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">16:00</td>
+                        <td class="slot talk"><a href="#tabs12" data-toggle="collapse" class="accordion-toggle">
+                        Secure Two Party Distribution Testing
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs12">
+                            We study the problem of discrete distribution testing in the two-party setting. For example, in the standard closeness testing problem, Alice and Bob each have t samples from, respectively, distributions a and b over [n], and they need to test whether a=b or a,b are ε-far (in the ℓ1 distance) for some fixed ε>0. This is in contrast to the well-studied one-party case, where the tester has unrestricted access to samples of both distributions, for which optimal bounds are known for a number of variations. Despite being a natural constraint in applications, the two-party setting has evaded attention so far.
+                            <br/>
+                            We address two fundamental aspects of the two-party setting: 1) what is the communication complexity, and 2) can it be accomplished securely, without Alice and Bob learning extra information about each other's input. Besides closeness testing, we also study the independence testing problem, where Alice and Bob have t samples from distributions a and b respectively, which may be correlated; the question is whether a,b are independent of ε-far from being independent.
+                            <br/><br/>
+                            Our contribution is three-fold:
+                            <br/>
+                            ∙ Communication: we show how to gain communication efficiency as we have more samples, beyond the information-theoretic bound on t. Furthermore, the gain is polynomially better than what one may obtain by adapting one-party algorithms.
+                            <br/>
+                            For the closeness testing, our protocol has communication s=Θ_ε(n^2/t^2) as long as t is at least the information-theoretic minimum number of samples. For the independence testing over domain [n]×[m], where n≥m, we obtain s=O_ε(n^2m/t^2+nm/t+m^1/2).
+                            <br/>
+                            ∙ Security: we define the concept of secure distribution testing and argue that it must leak at least some minimal information when the promise is not satisfied. We then provide secure versions of the above protocols with an overhead that is only polynomial in the security parameter.
+                            <br/>
+                            ∙ Lower bounds: we prove tightness of our trade-off for the closeness testing, as well as that the independence testing requires tight Ω(m^1/2) communication for unbounded number of samples. These lower bounds are of independent interest as, to the best of our knowledge, these are the first 2-party communication lower bounds for testing problems, where the inputs represent a set of i.i.d. samples.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">16:15</td>
+                        <td class="slot talk"><a href="#tabs13" data-toggle="collapse" class="accordion-toggle">
+                        Private Machine Learning in TensorFlow using Secure Computation
+                        </a>
+                        (contributed talk)
+                        &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs13">
+                            We present a framework for experimenting with secure multi-party computation directly in TensorFlow. By doing so we benefit from several properties valuable to both researchers and practitioners, including tight integration with ordinary machine learning processes, existing optimizations for distributed computation in TensorFlow, high-level abstractions for expressing complex algorithms and protocols, and an expanded set of familiar tooling. We give an open source implementation of a state-of-the-art protocol and report on concrete benchmarks using typical models from private machine learning.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">16:30</td>
+                        <td class="slot talk"><a href="#tabs14" data-toggle="collapse" class="accordion-toggle">
+                        Spotlight talks
+                        </a> &nbsp;&nbsp;
+                        <!-- <a href="slides/slides.pdf" class="link-paper">[slides]</a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="hiddenRow">
+                            <div class="accordion-body collapse talk-abstract" id="tabs14">
+                            Order coming soon
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">17:15</td>
+                        <td class="slot">Poster session</td>
+                    </tr>
+
+                    <tr>
+                        <td class="time">18:15</td>
+                        <td class="slot">Wrap up</td>
+                    </tr>
+
         		    </tbody>
-        		</table> -->
+        		</table>
             </div>
         </div>
     </section>
@@ -210,8 +488,6 @@
                     Coming soon
                     </div>
                 </div>
-
-
 
                 <div class="panel panel-default panel-paper">
                     <div class="panel-body panel-paper-body">
