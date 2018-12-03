@@ -277,7 +277,7 @@
                     <tr>
                         <td class="time">11:45</td>
                         <td class="slot talk"><a href="#tabs7" data-toggle="collapse" class="accordion-toggle">
-                        DP-MAC: The Differentially Private Method of Auxiliary Coordinates for Deep Learning
+                        Amplification by Shuffling: From Local to Central Differential Privacy via Anonymity
                         </a>
                         (contributed talk)
                         &nbsp;&nbsp;
@@ -287,7 +287,9 @@
                     <tr>
                         <td colspan="2" class="hiddenRow">
                             <div class="accordion-body collapse talk-abstract" id="tabs7">
-                            Developing a differentially private deep learning algorithm is challenging, due to the difficulty in analyzing the sensitivity of objective functions that are typically used to train deep neural networks. Many existing methods resort to the stochastic gradient descent algorithm and apply a pre-defined sensitivity to the gradients for privatizing weights. However, their slow convergence typically yields a high cumulative privacy loss. Here, we take a different route by employing the method of auxiliary coordinates, which allows us to independently update the weights per layer by optimizing a per-layer objective function. This objective function can be well approximated by a low-order Taylor's expansion, in which sensitivity analysis becomes tractable. We perturb the coefficients of the expansion for privacy, which we optimize using more advanced optimization routines than SGD for faster convergence. We empirically show that our algorithm provides a decent trained model quality under a modest privacy budget.
+                            Sensitive statistics are often collected across sets of users, with repeated collection of reports done over time. For example, trends in users' private preferences or software usage may be monitored via such reports. We study the collection of such statistics in the local differential privacy (LDP) model, when each user's value may change only a small number of times. We describe an algorithm whose privacy cost is polylogarithmic in the number of times the statistic is collected.
+                            <br/>
+                            More fundamentally---by building on anonymity of the users' reports---we also demonstrate how the privacy cost of our LDP algorithm can actually be much lower when viewed in the central model of differential privacy. We show, via a new and general technique, that any permutation-invariant algorithm satisfying $\varepsilon$-local differential privacy will satisfy $(O(\varepsilon \sqrt{\log \frac 1 \delta} / \sqrt{n}), \delta)$-central differential privacy. In the process, we clarify how the high noise and $\sqrt{n}$ overhead of LDP protocols is a consequence of them being significantly more private in the central model. As a final, practical corollary, our results also imply that industrial deployments of LDP mechanism may have much lower privacy cost than their advertised $\varepsilon$ would indicate---at least if reports are anonymized.
                             </div>
                         </td>
                     </tr>
@@ -347,9 +349,9 @@
                     </tr>
 
                     <tr>
-                        <td class="time">15:30</td>
+                        <td class="time">11:45</td>
                         <td class="slot talk"><a href="#tabs10" data-toggle="collapse" class="accordion-toggle">
-                        Amplification by Shuffling: From Local to Central Differential Privacy via Anonymity
+                        DP-MAC: The Differentially Private Method of Auxiliary Coordinates for Deep Learning
                         </a>
                         (contributed talk)
                         &nbsp;&nbsp;
@@ -359,9 +361,7 @@
                     <tr>
                         <td colspan="2" class="hiddenRow">
                             <div class="accordion-body collapse talk-abstract" id="tabs10">
-                            Sensitive statistics are often collected across sets of users, with repeated collection of reports done over time. For example, trends in users' private preferences or software usage may be monitored via such reports. We study the collection of such statistics in the local differential privacy (LDP) model, when each user's value may change only a small number of times. We describe an algorithm whose privacy cost is polylogarithmic in the number of times the statistic is collected.
-                            <br/>
-                            More fundamentally---by building on anonymity of the users' reports---we also demonstrate how the privacy cost of our LDP algorithm can actually be much lower when viewed in the central model of differential privacy. We show, via a new and general technique, that any permutation-invariant algorithm satisfying $\varepsilon$-local differential privacy will satisfy $(O(\varepsilon \sqrt{\log \frac 1 \delta} / \sqrt{n}), \delta)$-central differential privacy. In the process, we clarify how the high noise and $\sqrt{n}$ overhead of LDP protocols is a consequence of them being significantly more private in the central model. As a final, practical corollary, our results also imply that industrial deployments of LDP mechanism may have much lower privacy cost than their advertised $\varepsilon$ would indicate---at least if reports are anonymized.
+                            Developing a differentially private deep learning algorithm is challenging, due to the difficulty in analyzing the sensitivity of objective functions that are typically used to train deep neural networks. Many existing methods resort to the stochastic gradient descent algorithm and apply a pre-defined sensitivity to the gradients for privatizing weights. However, their slow convergence typically yields a high cumulative privacy loss. Here, we take a different route by employing the method of auxiliary coordinates, which allows us to independently update the weights per layer by optimizing a per-layer objective function. This objective function can be well approximated by a low-order Taylor's expansion, in which sensitivity analysis becomes tractable. We perturb the coefficients of the expansion for privacy, which we optimize using more advanced optimization routines than SGD for faster convergence. We empirically show that our algorithm provides a decent trained model quality under a modest privacy budget.
                             </div>
                         </td>
                     </tr>
