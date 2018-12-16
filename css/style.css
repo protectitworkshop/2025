@@ -245,8 +245,8 @@
             }
 
             footer {
-                color: black;
-                background: lightgrey;
+                color: white;
+                background: black;
                 padding: 50px 0;
             }
 
@@ -341,7 +341,7 @@
             }
 
             .link-paper {
-                color: white;
+                color: black;
                 font-weight: 400;
             }
 

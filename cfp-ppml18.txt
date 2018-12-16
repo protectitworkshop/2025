@@ -1,5 +1,5 @@
 Call for papers: Privacy Preserving Machine Learning -- NIPS 2018 Workshop
-Montreal, December 8, 2018 
+Montreal, December 8, 2018
 Website: https://ppml-workshop.github.io/ppml/
 
 
@@ -24,35 +24,13 @@ We think it will be very valuable to have a forum to unify different perspective
 Submissions in the form of extended abstracts must be at most 4 pages long (not including references) and adhere to the NIPS format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
 
 - Submission url: https://easychair.org/conferences/?conf=ppml18
-- Submission deadline: September 21, 2018 (11:59pm AoE)
-- Notification of acceptance: October 12, 2018
-- NIPS early registration deadline: October 24, 2018
-
-
-# Program Committee
-
-- Pauline Anthonysamy (Google)
-- Borja de Balle Pigem (Amazon)
-- Keith Bonawitz (Google)
-- Emiliano de Cristofaro (University College London)
-- David Evans (University of Virginia)
-- Irene Giacomelli (Wisconsin University)
-- Nadin Kokciyan (King's College London)
-- Kim Laine (Microsoft Research)
-- Payman Mohassel (Visa Research)
-- Catuscia Palamidessi (Ecole Polytechnique & INRIA)
-- Mijung Park (Max Planck Institute for Intelligent Systems)
-- Benjamin Rubinstein (University of Melbourne)
-- Anand Sarwate (Rutgers University)
-- Philipp Schoppmann (HU Berlin)
-- Nigel Smart (KU Leuven)
-- Carmela Troncoso (EPFL)
-- Pinar Yolum (Utrecht University)
-- Samee Zahur (University of Virginia)
+- Submission deadline: October 16, 2018 (11:59pm AoE)
+- Notification of acceptance: November 8, 2018
 
 
 # Organizers
 
+- Aurélien Bellet (Inria)
 - Adria Gascon (Alan Turing Institute & Edinburgh)
 - Niki Kilbertus (MPI for Intelligent Systems & Cambridge)
 - Olya Ohrimenko (Microsoft Research)
