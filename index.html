@@ -1130,7 +1130,7 @@
                         <a data-toggle="collapse" href="#abs36" class="paper-title">
                             DP-MAC: The Differentially Private Method of Auxiliary Coordinates for Deep Learning <font color="#d07200"><b>(contributed talk)</b></font>
                         </a> &nbsp;&nbsp;
-                        <a href="papers/67.pdf" class="link-paper">[PDF]</a>
+                        <a href="papers/67_main.pdf" class="link-paper">[PDF]</a> <a href="papers/67_appendix.pdf" class="link-paper">[APPENDIX]</a>
                     </div>
                     <div id="abs36" class="panel-footer panel-paper-footer collapse">
                     Developing a differentially private deep learning algorithm is challenging, due to the difficulty in analyzing the sensitivity of objective functions that are typically used to train deep neural networks. Many existing methods resort to the stochastic gradient descent algorithm and apply a pre-defined sensitivity to the gradients for privatizing weights. However, their slow convergence typically yields a high cumulative privacy loss. Here, we take a different route by employing the method of auxiliary coordinates, which allows us to independently update the weights per layer by optimizing a per-layer objective function. This objective function can be well approximated by a low-order Taylor's expansion, in which sensitivity analysis becomes tractable. We perturb the coefficients of the expansion for privacy, which we optimize using more advanced optimization routines than SGD for faster convergence. We empirically show that our algorithm provides a decent trained model quality under a modest privacy budget.
