@@ -331,6 +331,20 @@
                 }
             }
 
+            li.event {
+                background-color: black;
+                font-size: 18px;
+                border-color: black;
+            }
+
+            @media (min-width: 768px) {
+                li.event {
+                    background-color: black;
+                    font-size: 20px;
+                    border-color: black;
+                }
+            }
+
             .attribution {
                 font-size: 10px;
                 font-weight: lighter;
