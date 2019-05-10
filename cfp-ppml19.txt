@@ -1,0 +1,36 @@
+Call for papers: Privacy Preserving Machine Learning -- CCS 2019 Workshop
+London, November 15, 2019
+Website: https://ppml-workshop.github.io/ppml/
+
+
+# Description
+
+This one day workshop focuses on privacy preserving techniques for training, inference, and disclosure in large scale data analysis, both in the distributed and centralized settings. We have observed increasing interest of the Machine Learning (ML) community in leveraging cryptographic techniques such as Multi-Party Computation (MPC) and Homomorphic Encryption (HE) for privacy preserving training and inference, as well as Differential Privacy (DP) for disclosure. Simultaneously, the systems security and cryptography community has proposed various secure frameworks for ML. We encourage both theory and application-oriented submissions exploring a range of approaches, including:
+
+- secure multi-party computation techniques for ML
+- homomorphic encryption techniques for ML
+- hardware-based approaches to privacy preserving ML
+- centralized and decentralized protocols for learning on encrypted data
+- differential privacy: theory, applications, and implementations
+- statistical notions of privacy including relaxations of differential privacy
+- empirical and theoretical comparisons between different notions of privacy
+- trade-offs between privacy and utility
+
+
+# Submission instructions
+
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references) single column format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
+
+- Submission url: https://easychair.org/conferences/?conf=ppml19
+- Submission deadline: June 21, 2019 (11:59pm AoE)
+- Notification of acceptance: August 7, 2019
+
+
+# Organizers
+
+- Borja Balle
+- Adrià Gascón (Alan Turing Institute & Warwick)
+- Olya Ohrimenko (Microsoft Research)
+- Mariana Raykova (Google)
+- Phillipp Schoppmmann (HU Berlin)
+- Carmela Troncoso (EPFL)
