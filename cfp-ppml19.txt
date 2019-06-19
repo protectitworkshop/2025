@@ -19,7 +19,7 @@ This one day workshop focuses on privacy preserving techniques for training, inf
 
 # Submission instructions
 
-Submissions in the form of extended abstracts must be at most 4 pages long (not including references) single column format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references), using the CCS format. We do accept submissions of work recently published or currently under review. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage.
 
 - Submission url: https://easychair.org/conferences/?conf=ppml19
 - Submission deadline: June 21, 2019 (11:59pm AoE)
