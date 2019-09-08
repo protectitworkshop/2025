@@ -280,7 +280,6 @@
 
             #about,
             #speakers,
-            #organizers,
             #papers
             {
                 width: 100%;
@@ -290,6 +289,7 @@
             }
 
             #schedule,
+            #organizers,
             #grants,
             #dates
             {
@@ -318,16 +318,18 @@
             }
 
             li.organizer {
-                background-color: black;
+                background-color: lightgrey;
+                border-color: lightgrey;
                 font-size: 18px;
-                border-color: black;
+                color: black;
             }
 
             @media (min-width: 768px) {
                 li.organizer {
-                    background-color: black;
+                    background-color: lightgrey;
+                    border-color: lightgrey;
                     font-size: 20px;
-                    border-color: black;
+                    color: black;
                 }
             }
 
