@@ -442,6 +442,10 @@
                 vertical-align: middle;
             }
 
+            table.schedule > tbody > tr > td {
+                border-color: black;
+            }
+
             table.schedule {
                 font-size: 18px;
             }
