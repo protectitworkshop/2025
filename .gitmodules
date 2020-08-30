@@ -1,3 +1,3 @@
 [submodule "js/mathjax"]
-	path = js/mathjax
+	path = ppml19/js/mathjax
 	url = https://github.com/mathjax/MathJax.git
