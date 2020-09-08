@@ -1,5 +1,5 @@
 Call for papers: Privacy Preserving Machine Learning - PriML and PPML Joint Edition -- NeurIPS 2020 Workshop
-Virtual workshop: December 11, 2020
+Virtual workshop: December 11 or 12, 2020
 Website: https://ppml-workshop.github.io/
 
 # Description
