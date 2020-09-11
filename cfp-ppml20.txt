@@ -25,7 +25,7 @@ This one day workshop focuses on privacy preserving techniques for machine learn
 
 # Submission instructions
 
-Submissions in the form of extended abstracts must be at most 4 pages long (not including references; additional supplementary material may be submitted but may be ignored by reviewers), non-anonymized and adhere to the NeurIPS format. Submissions solely based on work that has been previously published in conferences on machine learning and related fields are not suitable for the workshop. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf added on the workshop webpage.
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references; additional supplementary material may be submitted but may be ignored by reviewers), non-anonymized and adhere to the NeurIPS format. We encourage submission of work that is new to the privacy-preserving machine learning community. Submissions solely based on work that has been previously published in conferences on machine learning and related fields are not suitable for the workshop. On the other hand, we allow submission of works currently under submission and relevant works recently published in privacy and security venues. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf added on the workshop webpage.
 
 - Submission url: https://easychair.org/my/conference?conf=ppml2020
 - Submission deadline: Oct 02, 2020
