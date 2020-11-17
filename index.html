@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Privacy Preserving Machine Learning - PriML and PPML Joint Edition 
+    <title>Privacy Preserving Machine Learning - PriML and PPML Joint Edition
     (NeurIPS 2020 Workshop)</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -63,9 +63,9 @@
                     <!-- <li> -->
                     <!--     <a class="page-scroll" href="#schedule">Schedule</a> -->
                     <!-- </li> -->
-                    <!-- <li> -->
-                    <!--     <a class="page-scroll" href="#papers">Accepted Papers</a> -->
-                    <!-- </li> -->
+                    <li>
+                        <a class="page-scroll" href="#papers">Accepted Papers</a>
+                    </li>
                     <!--<li>
                         <a class="page-scroll" href="#grants">Travel Grants</a>
                     </li>-->
@@ -617,124 +617,1904 @@
     <!--         </div> -->
     <!--     </div> -->
     <!-- </section> -->
-    <!-- <\!-- Accepted Papers -\-> -->
+    <!-- Accepted Papers -->
 
-    <!-- <section id="papers" class="container content-section text-center"> -->
-    <!--     <div class="row"> -->
-    <!--         <div class="col-lg-8 col-lg-offset-2"> -->
-    <!--             <h2>Accepted Papers</h2> -->
-    <!--             <\!--<h4 style="color: #d07200;"> -->
-    <!--             Links to pdfs as well as abstracts will be added soon. -->
-    <!--             </h4>-\-> -->
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         Marshall Ball, Brent Carmer, Tal Malkin, Mike Rosulek and Nichole Schimanski. -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs0" class="paper-title"> -->
-    <!--                         Garbled Neural Networks are Practical -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                 </div> -->
-    <!--                 <div id="abs0" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                     We show that garbled circuits offer a practical choice for secure evaluation of neural network -->
-    <!--                     classifiers, comparable with complex, specialized protocols using less robust assumptions, many -->
-    <!--                     rounds of interaction, and/or tailor-made neural networks. In particular, we develop a scheme -->
-    <!--                     for garbling ``off the shelf'' pre-trained neural networks, where the only model preprocessing -->
-    <!--                     required is a mild discretization step as opposed to requiring a specialized SFE-friendly model -->
-    <!--                     to be independently trained. Moreover, as our solution is a garbling scheme, it inherits a much -->
-    <!--                     more diverse range of applications than non-garbling-based solutions, perhaps most notably, -->
-    <!--                     efficient compilers for the malicious setting. At the protocol level, we start with the garbling -->
-    <!--                     scheme of Ball, Malkin, and Rosulek (ACM CCS 2016) for arithmetic circuits and introduce new -->
-    <!--                     optimizations for modern neural network activation functions. We develop fancygarbling, the -->
-    <!--                     first implementation of the BMR16 garbling scheme along with our new optimizations, as part of -->
-    <!--                     heavily optimized garbled-circuits tool that is driven by a TensorFlow classifier description. -->
-    <!--                     We evaluate our constructions on a wide range of neural networks. We find that our approach is -->
-    <!--                     up to 100x more efficient than straight-forward boolean garbling. It is also roughly 40% more -->
-    <!--                     efficient than DeepSecure (Rouhani et al., DAC 2018), a recent garbled-circuit-based approach -->
-    <!--                     for secure neural network evaluation, which incorporates significant optimization techniques for -->
-    <!--                     boolean circuits. Furthermore, our approach provides competitive performance tradeoffs -->
-    <!--                     (efficiency and latency vs. communication) also when compared with non-garbled-circuit -->
-    <!--                     approaches. -->
-    <!--                 </div> -->
-    <!--             </div> -->
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         Frank Blom, Niek J. Bouman, Berry Schoenmakers and Niels de Vreede. -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
-    <!--                         Efficient Secure Ridge Regression from Randomized Gaussian Elimination -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                 </div> -->
-    <!--                 <div id="abs1" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                     In this paper we present a practical protocol for secure ridge regression. We develop the -->
-    <!--                     necessary secure linear algebra tools, using only basic arithmetic over prime fields. In -->
-    <!--                     particular, we will show how to solve linear systems of equations and compute matrix inverses -->
-    <!--                     efficiently, using appropriate secure random self-reductions of these problems. The -->
-    <!--                     distinguishing feature of our approach is that the use of secure fixed-point arithmetic is -->
-    <!--                     avoided entirely, while circumventing the need for rational reconstruction at any stage as well. -->
-    <!--                     We demonstrate the potential of our protocol in a standard setting for information-theoretically -->
-    <!--                     secure multiparty computation, tolerating a dishonest minority of passively corrupt parties. -->
-    <!--                     Using the MPyC framework, which is based on threshold secret sharing over finite fields, we show -->
-    <!--                     how to handle large datasets efficiently, achieving practically the same root-mean-square errors -->
-    <!--                     as Scikit-learn. Moreover, we do not assume that any (part) of the datasets is held privately by -->
-    <!--                     any of the parties, which makes our protocol much more versatile than existing solutions. -->
-    <!--                 </div> -->
-    <!--             </div> -->
-                
-    <!--             <\!--<div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         AUTHOTS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs8" class="paper-title"> -->
-    <!--                         TITLE (paper with PDF) -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs8" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div> -->
+    <section id="papers" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Accepted Papers</h2>
+                <h4 style="color: #d07200;">
+                Links to pdfs as well as abstracts will be added soon.
+                </h4>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs0" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs0" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs0" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs0" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs0" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs1" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs1" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs2" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs2" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs3" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs3" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs4" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs4" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs5" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs5" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs6" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs6" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs7" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs7" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs8" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs8" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs9" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs9" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs10" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs10" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs10" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs10" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs10" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs11" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs11" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs12" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs12" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs13" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs13" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs13" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs13" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs13" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs14" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs14" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs15" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs15" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs16" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs16" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs17" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs17" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs18" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs18" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs19" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs19" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs20" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs20" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs21" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs21" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs22" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs22" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs23" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs23" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs24" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs24" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs25" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs25" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs26" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs26" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs27" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs27" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs28" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs28" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs29" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs29" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs30" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs30" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs31" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs31" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs32" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs32" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs33" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs33" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs34" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs34" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs35" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs35" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs36" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs36" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs37" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs37" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs38" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs38" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs39" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs39" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs40" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs40" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs40" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs40" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs40" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs41" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs41" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs42" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs42" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs43" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs43" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs44" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs44" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs45" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs45" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs46" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs46" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs47" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs47" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs48" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs48" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs48" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs48" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs48" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs49" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs49" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs50" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs50" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs51" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs51" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs52" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs52" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs53" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs53" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs53" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs53" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs53" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs54" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs54" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs55" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs55" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs56" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs56" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs57" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs57" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs58" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs58" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs58" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs58" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs58" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs59" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs59" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs60" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs60" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs61" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs61" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs62" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs62" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs63" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs63" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Author.
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs64" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs64" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                     AUTHORS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
-    <!--                     TITLE (paper with Arvix link) -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs1" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div> -->
-
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         AUTHORS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs11" class="paper-title"> -->
-    <!--                         TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font> -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="https://arxiv.org/abs/1806.03287" class="link-paper">[arxiv]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs11" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div>-\-> -->
-    <!--         </div> -->
-    <!--     </div> -->
-
-    <!-- </section> -->
+    </section>
     <!-- Organizers Section -->
     <section id="organizers" class="content-section text-center">
         <div class="row">
@@ -789,8 +2569,7 @@
                     <li class="list-group-item organizer">Catuscia Palamidessi (École Polytechnique & Inria)</li>
                     <li class="list-group-item organizer">Jan Ramon (Inria)</li>
                     <li class="list-group-item organizer">Anand Sarwate (Rutgers University)</li>
-                    <li class="list-group-item organizer">Peter Scholl 
-                    (Aarhus University)</li>
+                    <li class="list-group-item organizer">Peter Scholl (Aarhus University)</li>
                     <li class="list-group-item organizer">Phillipp Schoppmann (Humboldt University of Berlin)</li>
                     <li class="list-group-item organizer">Or Sheffet (University of Alberta)</li>
                     <li class="list-group-item organizer">Kana Shimizu (Waseda University)</li>
