@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Privacy Preserving Machine Learning - PriML and PPML Joint Edition 
+    <title>Privacy Preserving Machine Learning - PriML and PPML Joint Edition
     (NeurIPS 2020 Workshop)</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -63,9 +63,9 @@
                     <!-- <li> -->
                     <!--     <a class="page-scroll" href="#schedule">Schedule</a> -->
                     <!-- </li> -->
-                    <!-- <li> -->
-                    <!--     <a class="page-scroll" href="#papers">Accepted Papers</a> -->
-                    <!-- </li> -->
+                    <li>
+                        <a class="page-scroll" href="#papers">Accepted Papers</a>
+                    </li>
                     <!--<li>
                         <a class="page-scroll" href="#grants">Travel Grants</a>
                     </li>-->
@@ -617,124 +617,1920 @@
     <!--         </div> -->
     <!--     </div> -->
     <!-- </section> -->
-    <!-- <\!-- Accepted Papers -\-> -->
+    <!-- Accepted Papers -->
 
-    <!-- <section id="papers" class="container content-section text-center"> -->
-    <!--     <div class="row"> -->
-    <!--         <div class="col-lg-8 col-lg-offset-2"> -->
-    <!--             <h2>Accepted Papers</h2> -->
-    <!--             <\!--<h4 style="color: #d07200;"> -->
-    <!--             Links to pdfs as well as abstracts will be added soon. -->
-    <!--             </h4>-\-> -->
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         Marshall Ball, Brent Carmer, Tal Malkin, Mike Rosulek and Nichole Schimanski. -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs0" class="paper-title"> -->
-    <!--                         Garbled Neural Networks are Practical -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                 </div> -->
-    <!--                 <div id="abs0" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                     We show that garbled circuits offer a practical choice for secure evaluation of neural network -->
-    <!--                     classifiers, comparable with complex, specialized protocols using less robust assumptions, many -->
-    <!--                     rounds of interaction, and/or tailor-made neural networks. In particular, we develop a scheme -->
-    <!--                     for garbling ``off the shelf'' pre-trained neural networks, where the only model preprocessing -->
-    <!--                     required is a mild discretization step as opposed to requiring a specialized SFE-friendly model -->
-    <!--                     to be independently trained. Moreover, as our solution is a garbling scheme, it inherits a much -->
-    <!--                     more diverse range of applications than non-garbling-based solutions, perhaps most notably, -->
-    <!--                     efficient compilers for the malicious setting. At the protocol level, we start with the garbling -->
-    <!--                     scheme of Ball, Malkin, and Rosulek (ACM CCS 2016) for arithmetic circuits and introduce new -->
-    <!--                     optimizations for modern neural network activation functions. We develop fancygarbling, the -->
-    <!--                     first implementation of the BMR16 garbling scheme along with our new optimizations, as part of -->
-    <!--                     heavily optimized garbled-circuits tool that is driven by a TensorFlow classifier description. -->
-    <!--                     We evaluate our constructions on a wide range of neural networks. We find that our approach is -->
-    <!--                     up to 100x more efficient than straight-forward boolean garbling. It is also roughly 40% more -->
-    <!--                     efficient than DeepSecure (Rouhani et al., DAC 2018), a recent garbled-circuit-based approach -->
-    <!--                     for secure neural network evaluation, which incorporates significant optimization techniques for -->
-    <!--                     boolean circuits. Furthermore, our approach provides competitive performance tradeoffs -->
-    <!--                     (efficiency and latency vs. communication) also when compared with non-garbled-circuit -->
-    <!--                     approaches. -->
-    <!--                 </div> -->
-    <!--             </div> -->
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         Frank Blom, Niek J. Bouman, Berry Schoenmakers and Niels de Vreede. -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
-    <!--                         Efficient Secure Ridge Regression from Randomized Gaussian Elimination -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                 </div> -->
-    <!--                 <div id="abs1" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                     In this paper we present a practical protocol for secure ridge regression. We develop the -->
-    <!--                     necessary secure linear algebra tools, using only basic arithmetic over prime fields. In -->
-    <!--                     particular, we will show how to solve linear systems of equations and compute matrix inverses -->
-    <!--                     efficiently, using appropriate secure random self-reductions of these problems. The -->
-    <!--                     distinguishing feature of our approach is that the use of secure fixed-point arithmetic is -->
-    <!--                     avoided entirely, while circumventing the need for rational reconstruction at any stage as well. -->
-    <!--                     We demonstrate the potential of our protocol in a standard setting for information-theoretically -->
-    <!--                     secure multiparty computation, tolerating a dishonest minority of passively corrupt parties. -->
-    <!--                     Using the MPyC framework, which is based on threshold secret sharing over finite fields, we show -->
-    <!--                     how to handle large datasets efficiently, achieving practically the same root-mean-square errors -->
-    <!--                     as Scikit-learn. Moreover, we do not assume that any (part) of the datasets is held privately by -->
-    <!--                     any of the parties, which makes our protocol much more versatile than existing solutions. -->
-    <!--                 </div> -->
-    <!--             </div> -->
-                
-    <!--             <\!--<div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         AUTHOTS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs8" class="paper-title"> -->
-    <!--                         TITLE (paper with PDF) -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs8" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div> -->
+    <section id="papers" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Accepted Papers</h2>
+                <h4 style="color: #d07200;">
+                Links to pdfs as well as abstracts will be added soon.
+                </h4>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                           Badih Ghazi, Noah Golowich, Ravi Kumar, Pasin Manurangsi
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        < a data-toggle="collapse" href="#abs0" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs0" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs0" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs0" class="paper-title">
+                            Sample-efficient proper PAC learning with approximate differential privacy <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs0" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                           Pranav Subramani, Nicholas Vadivelu, Gautam Kamath
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs1" class="paper-title">
+                            Enabling Fast Differentially Private SGD via Static Graph Compilation and Batch-Level Parallelism
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs1" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs1" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Nishat	Koti, Mahak	Pancholi, Arpita	Patra, Ajith	Suresh
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs2" class="paper-title">
+                            SWIFT: Super-fast and Robust Privacy-Preserving Machine Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs2" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs2" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Xianrui	Meng, Joan	Feigenbaum
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs3" class="paper-title">
+                            Privacy-preserving XGBoost Inference
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs3" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs3" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            César	Sabater, Aurélien	Bellet, Jan	Ramon
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs4" class="paper-title">
+                            Distributed Differentially Private Averaging with Improved Utility and Robustness to Malicious Parties
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs4" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs4" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Georgios	Damaskinos, Celestine	Mendler-Dünner, Rachid	Guerraoui, Nikolaos	Papandreou, Thomas	Parnell
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs5" class="paper-title">
+                            Differentially Private Stochastic Coordinate Descent
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs5" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs5" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Shuang	Song, Om Dipakbhai	Thakkar, Abhradeep	Thakurta
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs6" class="paper-title">
+                            Characterizing Private Clipped Gradient Descent on Convex Generalized Linear Problems
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs6" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs6" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Carsten	Baum, Shahar	Segal, Yossi	Adi, Benny	Pinkas, Joseph	Keshet, Chaya	Ganesh
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs7" class="paper-title">
+                            Fairness in the Eyes of the Data: Certifying Machine-Learning Models
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs7" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs7" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Mimee	Xu, Awni	Hannun, Laurens	van der Maaten
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs8" class="paper-title">
+                            Data Appraisal Without Data Sharing
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs8" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs8" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Vitaly	Feldman, Tijana	Zrnic
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs9" class="paper-title">
+                            Individual Privacy Accounting via a Rényi Filter
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs9" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs9" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Swaroop	Ramaswamy	, Om Dipakbhai	Thakkar, Rajiv	Mathews, Galen	Andrew, Brendan	McMahan, Françoise	Beaufays
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs10" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs10" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs10" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs10" class="paper-title">
+                            Training Production Language Models without Memorizing User Data <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs10" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Om Dipakbhai	Thakkar, Swaroop	Ramaswamy, Rajiv	Mathews, Françoise	Beaufays
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs11" class="paper-title">
+                            Understanding Unintended Memorization in Federated Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs11" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs11" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Marcel	Keller, Ke	Sun
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs12" class="paper-title">
+                            Effectiveness of MPC-friendly Softmax Replacement
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs12" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs12" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Sinem	Sav, Apostolos	Pyrgelis, Juan Ramón	Troncoso-Pastoriza	, David	Froelicher, Jean-Philippe	Bossuat, João	Sá Sousa, Jean-Pierre	Hubaux
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs13" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs13" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs13" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs13" class="paper-title">
+                            POSEIDON: Privacy-Preserving Federated Neural Network Learning <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs13" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                           Javier	Alvarez-Valle, Pratik	Bhatu, Nishanth	Chandran, Divya	Gupta, Aditya	Nori, Aseem	Rastogi, Mayank	Rathee, Rahul	Sharma, Shubham	Ugare
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
 
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                     AUTHORS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs1" class="paper-title"> -->
-    <!--                     TITLE (paper with Arvix link) -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs1" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div> -->
+                        <a data-toggle="collapse" href="#abs14" class="paper-title">
+                            Secure Medical Image Analysis with CrypTFlow
+                        </a> &nbsp;&nbsp;
 
-    <!--             <div class="panel panel-default panel-paper"> -->
-    <!--                 <div class="panel-body panel-paper-body"> -->
-    <!--                     <span class="paper-author"> -->
-    <!--                         AUTHORS -->
-    <!--                     </span> -->
-    <!--                     <br /> -->
-    <!--                     <a data-toggle="collapse" href="#abs11" class="paper-title"> -->
-    <!--                         TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font> -->
-    <!--                     </a> &nbsp;&nbsp; -->
-    <!--                     <a href="https://arxiv.org/abs/1806.03287" class="link-paper">[arxiv]</a> -->
-    <!--                 </div> -->
-    <!--                 <div id="abs11" class="panel-footer panel-paper-footer collapse"> -->
-    <!--                 ABSTRACT -->
-    <!--                 </div> -->
-    <!--             </div>-\-> -->
-    <!--         </div> -->
-    <!--     </div> -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs14" class="paper-title">
+                             Secure Medical Image Analysis with CrypTFlow <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs14" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Evrard	Garcelon, Vianney	Perchet, Ciara	Pike-Burke, Matteo	Pirotta
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs15" class="paper-title">
+                            Local Differentially Private Regret Minimization in Reinforcement Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs15" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs15" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Debabrota	Basu, Christos	Dimitrakakis
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs16" class="paper-title">
+                            Privacy in Multi-armed Bandits: Fundamental Definitions and Lower Bounds on Regret
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs16" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs16" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Vinith M.	Suriyakumar, Nicolas	Papernot, Anna	Goldenberg, Marzyeh	Ghassemi
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs17" class="paper-title">
+                            Challenges of Differentially Private Prediction in Healthcare Settings
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs17" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs17" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Andrew	Trask, Kritika	Prakash
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs18" class="paper-title">
+                            	Towards General-purpose Infrastructure for Protecting Scientific Data Under Study
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs18" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs18" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Brian	Knott, Shobha	Venkataraman, Awni	Hannun, Shubho	Sengupta, Mark	Ibrahim, Laurens	van der Maaten
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs19" class="paper-title">
+                            CrypTen: Secure Multi-Party Computation Meets Machine Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs19" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs19" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Xu	Zheng, Nicholas	McCarthy, Jeremiah	Hayes
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs20" class="paper-title">
+                            Network Generation with Differential Privacy
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs20" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs20" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Ji	Gao, Sanjam	Garg, Mohammad	Mahmoody, Prashant Nalini	Vasudevan
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs21" class="paper-title">
+                            Privacy Attacks on Machine Unlearning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs21" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs21" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Hanshen	Xiao, Srinivas	Devadas
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs22" class="paper-title">
+                            Randomness Beyond Noise: Differentially Private Optimization Improvement through Mixup
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs22" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs22" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Fatemehsadat	Mireshghallah, Huseyin A.	Inan, Marcello	Hasegawa, Victor	Ruhle, Robert	Sim
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs23" class="paper-title">
+                            Privacy Regularization: Joint Privacy-UtilityOptimization in Language Models
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs23" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs23" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Andrew	Law, Chester	Leung, Rishabh	Poddar, Raluca Ada	Popa, Chenyu	Shi, Octavian	Sima, Chaofan	Yu, Xingmeng	Zhang, Wenting	Zheng
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs24" class="paper-title">
+                            	Data-oblivious training for XGBoost models
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs24" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs24" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Joonas	Jälkö, Lukas	Prediger, Antti	Honkela, Samuel	Kaski
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs25" class="paper-title">
+                            Twinify: A software package for differentially private data release
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs25" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs25" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Edwige	Cyffers, Aurélien	Bellet
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs26" class="paper-title">
+                            	Privacy Amplification by Decentralization
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs26" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs26" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Antti	Koskela, Joonas	Jälkö, Lukas	Prediger, Antti	Honkela
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs27" class="paper-title">
+                            	Tight Approximate Differential Privacy for Discrete-Valued Mechanisms Using FFT
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs27" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs27" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Tejas	Kulkarni, Joonas	Jälkö, Antti	Koskela, Antti	Honkela, Samuel	Kaski
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs28" class="paper-title">
+                            Differentially Private Bayesian Inference For GLMs
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs28" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs28" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Mikko	Heikkilä, Antti	Koskela, Kana	Shimizu, Samuel	Kaski, Antti	Honkela
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs29" class="paper-title">
+                            Differentially private cross-silo federated learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs29" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs29" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Fabian	Boemer, Rosario	Cammarota, Daniel	Demmler, Thomas	Schneider, Hossein	Yalame
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs30" class="paper-title">
+                            MP2ML: A Mixed-Protocol Machine Learning Framework for Private Inference (Extended Abstract)
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs30" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs30" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Javad	Ghareh Chamani, Dimitrios	Papadopoulos
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs31" class="paper-title">
+                            Mitigating Leakage in Federated Learning with Trusted Hardware
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs31" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs31" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Rahul	Rachuri, Daniel	Escudero, Matthew	Jagielski, Peter	Scholl
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs32" class="paper-title">
+                            Adversarial Attacks and Countermeasures on Private Training in MPC
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs32" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs32" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Fatemehsadat	Mireshghallah, Mohammadkazem	Taram, Ali	Jalali, Ahmed	Youssef, Dean	Tullsen, Hadi	Esmaeilzadeh
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs33" class="paper-title">
+                            Not All Features Are Equal: DiscoveringEssential Features for Preserving Prediction Privacy
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs33" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs33" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Théo	Jourdan, Antoine	Boutet, Carole	Frindel, Sébastien	Gambs, Rosin Claude	Ngueveu
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs34" class="paper-title">
+                            DYSAN: Dynamically sanitizing motion sensor data against sensitive inferences through adversarial networks
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs34" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs34" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Bargav	Jayaraman, Lingxiao	Wang, Katherine	Knipmeyer, Quanquan	Gu, David	Evans
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs35" class="paper-title">
+                            Revisiting Membership Inference Under Realistic Assumptions (Extended Abstract)
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs35" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs35" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Bogdan	Cebere, Phillipp	Schoppmann, Pavlos	Papadopoulos, Nick	Angelou, Michael	Hoeh, Robin	Roehm
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs36" class="paper-title">
+                            Asymmetric Private Set Intersection with Applications to Contact Tracing and Private Vertical Federated Machine Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs36" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs36" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Ramy	Ali, Jinhyun	So, A. Salman	Avestimehr
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs37" class="paper-title">
+                            On Polynomial Approximations for Privacy-Preserving and Verifiable ReLU Networks
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs37" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs37" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Himanshu	Arora
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs38" class="paper-title">
+                            Multi-Headed Global Model for handling Non-IID data
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs38" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs38" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Divyat	Mahajan, Shruti	Tople, Amit	Sharma
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs39" class="paper-title">
+                            	Does Domain Generalization Provide InherentMembership Privacy
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs39" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs39" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Antonious	Girgis, Deepesh	Data, Suhas	Diggavi, Peter	Kairouz, Ananda Theertha	Suresh
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs40" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs40" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs40" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs40" class="paper-title">
+                             Shuffled Model of Federated Learning: Privacy, Accuracy, and Communication Trade-offs <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs40" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Virat	Shejwalkar, Amir	Houmansadr
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs41" class="paper-title">
+                            Machine Learning with Membership Privacy via Knowledge Transfer
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs41" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs41" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Tianshi	Cao, Alex	Bie, Karsten	Kreis, Sanja	Fidler
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs42" class="paper-title">
+                            	Differentially Private Generative Models Through Optimal Transport
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs42" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs42" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Ilaria	Chillotti, Marc	Joye, Pascal	Paillier
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs43" class="paper-title">
+                            	New Challenges for Fully Homomorphic Encryption
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs43" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs43" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Ishaq	Aden-Ali, Hassan	Ashtiani, Gautam	Kamath
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs44" class="paper-title">
+                            On the Sample Complexity of Privately Learning Unbounded High-Dimensional Gaussians
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs44" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs44" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Wenlin	Chen, Samuel	Horváth, Peter	Richtárik
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs45" class="paper-title">
+                            Optimal Client Sampling for Federated Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs45" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs45" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Debmalya	Biswas
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs46" class="paper-title">
+                            Privacy Preserving Chatbot Conversations
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs46" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs46" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Vasisht	Duddu, Antoine	Boutet, Virat	Shejwalkar
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs47" class="paper-title">
+                            Quantifying Privacy Leakage in Graph Embedding
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs47" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs47" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Harsh	Chaudhari	, Peter	Rindal
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs48" class="paper-title">
+                            Title
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs48" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs48" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                         <a data-toggle="collapse" href="#abs48" class="paper-title">
+                            	Greenwoods: A Practical Random Forest Framework for Privacy Preserving Training and Prediction <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs48" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Peizhao	Hu, Asma	Aloufi, Adam	Caulfield, Kim	Laine, Kristen	Lauter
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs49" class="paper-title">
+                            	SparkFHE: Distributed Dataflow Framework with Fully Homomorphic Encryption
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs49" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs49" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Badih	Ghazi, Ravi	Kumar, Pasin	Manurangsi, Thao	Nguyen
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs50" class="paper-title">
+                            Robust and Private Learning of Halfspaces
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs50" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs50" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Vitaly	Feldman, Audra	McMillan, Kunal	Talwar
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs51" class="paper-title">
+                            Hiding Among the Clones: A Simple and Nearly Optimal Analysis of Privacy Amplification by Shuffling
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs51" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs51" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Harsha	Nori, Zhiqi	Bu, Judy	Shen, Rich	Caruana, Janardhan	Kulkarni
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs52" class="paper-title">
+                            Accuracy, Interpretability and Differential Privacy via Explainable Boosting
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs52" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs52" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Chenghong	Wang, David	Pujol, Yaping	Zhang, Johes	Bater, Matthew	Lentz, Ashwin	Machanavajjhala, Kartik	Nayak, Lavanya	Vasudevan, Jun	Yang
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs53" class="paper-title">
+                            Poirot: Private Contact Summary Aggregation
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs53" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs53" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs53" class="paper-title">
+                            Poirot: Private Contact Summary Aggregation <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs53" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                           Praneeth	Vepakomma, Subha Nawer	Pushpita, Ramesh	Raskar
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs54" class="paper-title">
+                            	DAMS: Meta-estimation of private sketch data structures for differentially private contact tracing
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs54" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs54" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Mark	Cesar, Ryan	Rogers
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs55" class="paper-title">
+                            	Unifying Privacy Loss for Data Analytics
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs55" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs55" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Maziar	Gomrokchi, Spencer	Main, Susan	Amin, Doina	Precup
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs56" class="paper-title">
+                            	PrivAttack: A Membership Inference Attack Framework Against Deep Reinforcement Learning Agents
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs56" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs56" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Abhishek	Singh, Vivek	Sharma, Ayush	Chopra, Praneeth	Vepakomma, Ramesh	Raskar
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs57" class="paper-title">
+                            Dynamic Channel Pruning for Privacy
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs57" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs57" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Nicholas	Carlini, Samuel	Deng, Sanjam	Garg, Somesh	Jha, Saeed	Mahloujifar, Mohammad	Mahmoody, Shuang	Song, Abhradeep	Thakurta
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <!--
+                        <a data-toggle="collapse" href="#abs58" class="paper-title">
+                            	On the (Im)Possibility of Private Machine Learning through Instance Encoding
+                        </a> &nbsp;&nbsp;
+                        -->
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs58" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs58" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <a data-toggle="collapse" href="#abs58" class="paper-title">
+                            	On the (Im)Possibility of Private Machine Learning through Instance Encoding <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp;
+                    </div>
+                    <div id="abs58" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Chung-Wei	Weng, Yauhen	Yakimenka, Hsuan-Yin	Lin, Eirik	Rosnes, Joerg	Kliewer
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs59" class="paper-title">
+                            Generative Adversarial User Privacy in Lossy Single-Server Information Retrieval
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs59" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs59" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Vasisht	Duddu, Virat	Shejwalkar, Antoine	Boutet
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs60" class="paper-title">
+                            	Privacy Risks in Embedded Deep Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs60" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs60" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Nurislam	Tursynbek, Aleksandr	Petiushko, Ivan	Oseledets
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs61" class="paper-title">
+                            Robustness Threats of Differential Privacy
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs61" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs61" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Pratyush	Maini, Mohammad	Yaghini, Nicolas	Papernot
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs62" class="paper-title">
+                            Dataset Inference: Ownership Resolution in Machine Learning
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs62" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs62" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                            Anshul	Aggarwal, Trevor	Carlson, Reza	Shokri, Shruti	Tople
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs63" class="paper-title">
+                            	SOTERIA: In Search of Efficient Neural Networks for Private Inference
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs63" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs63" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+                <div class="panel panel-default panel-paper">
+                    <div class="panel-body panel-paper-body">
+                        <span class="paper-author">
+                           James Henry	Bell, K. A.	Bonawitz, Adrià	Gascón, Tancrède	Lepoint, Mariana	Raykova
+                        </span>
+                        <br />
+                        <!-- Standard Template  -->
+                        <a data-toggle="collapse" href="#abs64" class="paper-title">
+                            Secure Single-Server Aggregation with (Poly)Logarithmic Overhead
+                        </a> &nbsp;&nbsp;
+                        <!-- Paper w/ PDF Template  -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title"> -->
+                            <!-- Title (paper with PDF) -->
+                        <!-- </a> &nbsp;&nbsp; -->
+                        <!-- <a href="papers/13.pdf" class="link-paper">[PDF]</a> -->
+                        <!-- Paper w/ arXiv Link Template -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title">
+                        TITLE (paper with Arvix link)
+                        </a> &nbsp;&nbsp;
+                        <a href="https://arxiv.org/abs/1811.11124" class="link-paper">[arxiv]</a> -->
+                        <!-- Paper w/ Contributed Talk Template -->
+                        <!-- <a data-toggle="collapse" href="#abs64" class="paper-title">
+                            TITLE (paper with contributed talk) <font color="#d07200"><b>(contributed talk)</b></font>
+                        </a> &nbsp;&nbsp; -->
+                    </div>
+                    <div id="abs64" class="panel-footer panel-paper-footer collapse">
+                        Abstract coming soon.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- </section> -->
+    </section>
     <!-- Organizers Section -->
     <section id="organizers" class="content-section text-center">
         <div class="row">
@@ -789,8 +2585,7 @@
                     <li class="list-group-item organizer">Catuscia Palamidessi (École Polytechnique & Inria)</li>
                     <li class="list-group-item organizer">Jan Ramon (Inria)</li>
                     <li class="list-group-item organizer">Anand Sarwate (Rutgers University)</li>
-                    <li class="list-group-item organizer">Peter Scholl 
-                    (Aarhus University)</li>
+                    <li class="list-group-item organizer">Peter Scholl (Aarhus University)</li>
                     <li class="list-group-item organizer">Phillipp Schoppmann (Humboldt University of Berlin)</li>
                     <li class="list-group-item organizer">Or Sheffet (University of Alberta)</li>
                     <li class="list-group-item organizer">Kana Shimizu (Waseda University)</li>
