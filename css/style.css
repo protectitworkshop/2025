@@ -426,6 +426,10 @@
                 font-style: italic;
             }
 
+            td.block {
+                font-weight: bold;
+            }
+
             div.talk-abstract {
                 background-color: lightgrey;
                 color: black;
@@ -440,6 +444,7 @@
             .table > tbody > tr > td.time {
                 font-size: 14px;
                 vertical-align: middle;
+                text-align: left;
             }
 
             table.schedule > tbody > tr > td {
