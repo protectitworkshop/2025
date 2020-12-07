@@ -402,9 +402,10 @@
             }
 
             .panel-paper > .panel-paper-footer {
-                background-color: white;
+                background-color: lightgrey;
                 color: black;
                 font-size: 12px;
+                border-top: 1px solid lightgray;
             }
 
             .paper-title {
