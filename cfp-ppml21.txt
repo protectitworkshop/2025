@@ -1,0 +1,37 @@
+Call for papers: Privacy Preserving Machine Learning -- ACM CCS 2021 Workshop
+Website: https://ppml-workshop.github.io/
+
+# Description
+
+This one day workshop focuses on privacy preserving techniques for training, inference, and disclosure in large scale data analysis, both in the distributed and centralized settings. We have observed increasing interest of the Machine Learning (ML) community in leveraging cryptographic techniques such as Multi-Party Computation (MPC) and Homomorphic Encryption (HE) for privacy preserving training and inference, as well as Differential Privacy (DP) for disclosure. Simultaneously, the systems security and cryptography community has proposed various secure frameworks for ML. We encourage both theory and application-oriented submissions exploring a range of approaches, including:
+
+* Differential privacy and other statistical notions of privacy: theory, applications, and implementations
+* Secure multi-party computation techniques for ML
+* Learning on encrypted data
+* Hardware-based approaches to privacy-preserving ML
+* Trade-offs between privacy and utility
+* Privacy attacks
+* Federated and decentralized privacy-preserving algorithms
+* Programming languages for privacy-preserving data analysis
+* Policy-making aspects of data privacy
+* Interplay between privacy and adversarial robustness in machine learning
+* Relations between privacy, fairness and transparency
+* Applications of privacy-preserving ML
+
+# Submission instructions
+
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references), using the CCS format. We encourage submission of work that is new to the privacy-preserving machine learning community. Submissions solely based on work that has been previously published in conferences on machine learning and related fields are not suitable for the workshop. On the other hand, we allow submission of works currently under submission and relevant works recently published in privacy and security venues. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage. 
+
+Submission url: https://ppml21.hotcrp.com
+Submission deadline: June 25, 2021
+Notification of acceptance: August 13, 2021
+
+# Organizers
+
+James Bell (The Alan Turing Institute)
+Aurélien Bellet (INRIA)
+Adrià Gascón (Google)
+Olya Ohrimenko (University of Melbourne)
+Mariana Raykova (Google)
+Phillipp Schoppmann (Google)
+Carmela Troncoso (EPFL)
