@@ -1,4 +1,5 @@
 Call for papers: Privacy Preserving Machine Learning -- ACM CCS 2021 Workshop
+November 19, 2021
 Website: https://ppml-workshop.github.io/
 
 # Description
@@ -25,6 +26,7 @@ Submissions in the form of extended abstracts must be at most 4 pages long (not 
 Submission url: https://ppml21.hotcrp.com
 Submission deadline: July 22, 2021
 Notification of acceptance: September 16, 2021
+Workshop: November 19, 2021
 
 # Organizers
 
