@@ -21,7 +21,7 @@ This one day workshop focuses on privacy preserving techniques for training, inf
 
 # Submission instructions
 
-Submissions in the form of extended abstracts must be at most 4 pages long (not including references), using the double-column ACM format. We encourage submission of work that is new to the privacy-preserving machine learning community. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage. Authors of accepted papers are required to register for the workshop but can present their work remotely.
+Submissions in the form of extended abstracts must be at most 4 pages long (not including references), using the double-column ACM format. We encourage submission of work that is new to the privacy-preserving machine learning community. Submissions should be anonymized. The workshop will not have formal proceedings, but authors of accepted abstracts can choose to have a link to arxiv or a pdf published on the workshop webpage. Authors of accepted papers are required to register for the workshop but can present their work remotely.
 
 Submission url: https://ppml21.hotcrp.com
 Submission deadline: July 22, 2021
