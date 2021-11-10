@@ -446,6 +446,7 @@
                 font-size: 14px;
                 vertical-align: middle;
                 text-align: left;
+                width: 7em;
             }
 
             table.schedule > tbody > tr > td {
