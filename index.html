@@ -504,6 +504,922 @@
         <div class="col-lg-8 col-lg-offset-2">
             <h2>Accepted Papers</h2>
 
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Casey Meehan (UCSD), Amrita Roy Chowdhury (University of Wisconsin-Madison), Kamalika Chaudhuri (UCSD), Somesh Jha (University of Wisconsin)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs3" class="paper-title">
+                        (A1) A Shuffling Framework for Local Differential Privacy
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2106.06603" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final3.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs3" class="panel-footer panel-paper-footer collapse">
+                    \ldp deployments are vulnerable to inference attacks as an adversary can link the noisy responses to their identity and subsequently, auxiliary information using the \textit{order} of the data. An alternative model, shuffle \textsf{DP}, prevents this by shuffling the noisy responses uniformly at random.  However, this limits the data learnability -- only symmetric functions (input order agnostic) can be learned. In this paper, we strike a balance and propose a generalized shuffling framework that interpolates between the two deployment models. We show that systematic shuffling of the noisy responses can thwart specific inference attacks while retaining some meaningful data learnability. To this end, we propose a novel privacy guarantee, \name-privacy, that captures the privacy of the order of a data sequence. \name-privacy allows tuning the granularity at which the ordinal information is maintained, which formalizes the degree the resistance to inference attacks trading it off with data learnability.  Additionally, we propose a novel shuffling mechanism that can achieve \name-privacy and demonstrate the practicality of our mechanism via evaluation on real-world datasets.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Tomer Shoham (The Hebrew University of Jerusalem), Yosef Rinott (The Hebrew University of Jerusalem)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs8" class="paper-title">
+                        (A2) Adjusting Queries to Statistical Procedures Under Differential Privacy
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/pdf/2110.05895.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs8" class="panel-footer panel-paper-footer collapse">
+                    We consider a dataset $S$ held by an agency, and a vector of queries of interest, to be issued by an analyst, $f(S) \in \mathbb{R}^k$  that naturally provides the information required for certain planned statistical inference. The agency releases queries with noise that guaranties a given level of Differential Privacy -  DP$(\varepsilon,\delta)$ -using  the well-known Gaussian mechanism. The analyst can choose to issue the vector query $f(S)$ or to adjust it by a suitable transformation. For any given level of privacy DP$(\varepsilon,\delta)$ decided by the agency, we study situations where the analyst can achieve better statistical inference by adjusting the query with a suitable transformation.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Youming Tao (Shandong University), Yulian Wu (King Abdullah University of Science and Technology), Peng Zhao (Nanjing University), Di Wang (King Abdullah University of Science and Technology)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs14" class="paper-title">
+                        (A3) Optimal Rates of (Locally) Differentially Private Heavy-tailed Multi-Armed Bandits
+
+                    </a>
+
+                </div>
+                <div id="abs14" class="panel-footer panel-paper-footer collapse">
+                    In this paper we study the problem of stochastic multi-armed bandits (MAB) in the (local) differential privacy (DP/LDP) model. Unlike the previous results which need to assume bounded reward distributions, here we mainly focus on the case the reward distribution of each arm only has $(1+v)$-th moment with some $v\in (0, 1]$. In the first part, we study the problem in the central $\epsilon$-DP model. We first provide a near-optimal result by developing a private and robust Upper Confidence Bound (UCB) algorithm. Then, we improve the result via a private and robust version of the Successive Elimination (SE) algorithm. Finally, we show that the instance-dependent regret bound of our improved algorithm is optimal by showing its lower bound. In the second part of the paper, we study the problem in the $\epsilon$-LDP model. We propose an algorithm which could be seen as locally private and robust version of the SE algorithm,  and show it could achieve  (near) optimal rates for both  instance-dependent and instance-independent regrets. All of the above results can also reveal the differences between the problem of private MAB with bounded rewards and heavy-tailed rewards.  To achieve these (near) optimal rates, we develop several new hard instances and private robust estimators as byproducts, which might could be used to other related problems. Finally, experimental results also support our theoretical analysis and show the effectiveness of our algorithms.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Xiyang Liu (University of Washington), Weihao Kong (University of Washington), Sham Kakade (University of Washington), Sewoong Oh (University of Washington)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs18" class="paper-title">
+                        (A4) Robust and Differentially Private Mean Estimation
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2102.09159" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs18" class="panel-footer panel-paper-footer collapse">
+                    In statistical learning and analysis from shared data, which is increasingly widely adopted in platforms such as federated learning and meta-learning, there are two major concerns: privacy and robustness. Each participating individual should be able to contribute without the fear of leaking one’s sensitive information. At the same time, the system should be robust in the presence of malicious participants inserting corrupted data. Recent algorithmic advances in learning from shared data focus on either one of these threats, leaving the system vulnerable to the other. We bridge this gap for the canonical problem of estimating the mean from i.i.d. samples. We introduce PRIME, which is the first efficient algorithm that achieves both privacy and robustness for a wide range of distributions. We further complement this result with a novel exponential time algorithm that improves the sample complexity of PRIME, achieving a near-optimal guarantee and matching a known lower bound for (non-robust) private mean estimation. This proves that there is no extra statistical cost to simultaneously guaranteeing privacy and robustness.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Paul Mangold (INRIA), Aurélien Bellet (INRIA), Joseph Salmon (Univ. Montpellier), Marc Tommasi (Univ. Lille)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs24" class="paper-title">
+                        (A5) Differentially Private Coordinate Descent for Composite Empirical Risk Minimization
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2110.11688" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs24" class="panel-footer panel-paper-footer collapse">
+                    In this paper, we propose a differentially private coordinate descent (DP-CD) algorithm for composite empirical risk minimization. We provide a formal analysis of the privacy-utility trade-off of DP-CD, and show that it can outperform the classic DP-SGD algorithm in some regimes. Our analysis also suggests a way to set per-feature gradient clipping constants, substantially easing practical implementations. Experiments on synthetic data confirm the relevance of the proposed approach and validate our theoretical results.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Lijie Hu (King Abdullah University of Science and Technology), Shuo Ni (University of Southern California), Hanshen Xiao (Massachusetts Institute of Technology), Di Wang (King Abdullah University of Science and Technology)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs29" class="paper-title">
+                        (A6) High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data
+
+                    </a>
+
+                </div>
+                <div id="abs29" class="panel-footer panel-paper-footer collapse">
+                    As one of the most fundamental problems in machine learning, statistics and differential privacy, Differentially Private Stochastic Convex Optimization (DP-SCO) has been extensively studied in recent years. However, most of the previous work can only handle either regular data distributions or irregular data in the low dimensional space case. To better understand the challenges arising from irregular data distributions, in this paper we provide the first study on the problem of DP-SCO with heavy-tailed data in the high dimensional space. In the first part we focus on the problem over some polytope constraint (such as the $\ell_1$-norm ball). We show that if the loss function is smooth and its gradient has bounded second order moment, it is possible to get a (high probability) error bound (excess population risk) of $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{1}{3}})$ in the $\epsilon$-DP model, where $n$ is the sample size and $d$ is the dimension of the underlying space. Next, for LASSO,  if the data  distribution has bounded fourth-order moments, we improve the bound to $\tilde{O}(\frac{\log d}{(n\epsilon)^\frac{2}{5}})$ in the $(\epsilon, \delta)$-DP model.  In the second part of the paper, we study sparse learning with heavy-tailed data. We first revisit the sparse linear model and propose a truncated DP-IHT method whose output could achieve an error of $\tilde{O}(\frac{s^{*2}\log^2 d}{n\epsilon})$, where $s^*$ is the sparsity of the underlying parameter. Then we study a more general problem over the sparsity ({\em i.e.,} $\ell_0$-norm) constraint, and show that it is possible to achieve an error of $\tilde{O}(\frac{s^{*\frac{3}{2}}\log d}{n\epsilon})$, which is also near optimal up to a factor of $\tilde{O}{(\sqrt{s^*})}$,  if the loss function is smooth and strongly convex.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Artem Betlei (Criteo AI Lab & Université Grenoble Alpes), Théophane Gregoir (Criteo AI Lab & ENS Paris-Saclay), Thibaud Rahier (Criteo AI Lab), Aloïs Bissuel (Criteo AI Lab), Eustache Diemert (Criteo AI Lab), Massih-Reza Amini (Université Grenoble Alpes)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs34" class="paper-title">
+                        (A7) Differentially Private Individual Treatment Effect Estimation from Aggregated Data
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final34.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs34" class="panel-footer panel-paper-footer collapse">
+                    Individual Treatment Effect (ITE) estimation has become one of the main trends in Causal Inference due to its applications in various areas where personalization is key.
+In order to circumvent the complex problem of causal identification, the randomized control trial (RCT) set-up is used in several domains which refer to ITE estimation as uplift modeling.
+If practitioners used to have full access to the user-level data in order to learn uplift models, the rise of privacy concerns in different domains such as healthcare or online advertising motivates to explore how such models could be trained to reach significant performances while ensuring relevant privacy guarantees.
+We present $\epsilon$-ADUM, an $\epsilon$-differentially private method to learn uplift models from data aggregated according to a given partition of the feature space.
+After adapting the bias-variance decomposition to the Precision in Estimation of Heterogeneous Effects (PEHE) metric, we propose an upper bound of the  performance of $\epsilon$-ADUM under a set of illustrative assumptions, which explicits the privacy-utility trade-off for this class of models and provides insights on how the size of the underlying partition can be adapted to match the privacy constraints. Finally, we provide experiments on both synthetic and real data highlighting that $\epsilon$-ADUM outperforms $\epsilon$-differentially private models with access to individual data for strong privacy guarantees ($\epsilon \leq 5$).
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Salil Vadhan (Harvard University), Tianhao Wang (Harvard University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs57" class="paper-title">
+                        (A8) Concurrent Composition of Differential Privacy
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2105.14427" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final57.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs57" class="panel-footer panel-paper-footer collapse">
+                    We initiate a study of the composition properties of interactive differentially private mechanisms.  An interactive differentially private mechanism is an algorithm that allows an analyst to adaptively ask queries about a sensitive dataset, with the property that an adversarial analyst's view of the interaction is approximately the same regardless of whether or not any individual's data is in the dataset.  Previous studies of composition of differential privacy have focused on non-interactive algorithms, but interactive mechanisms are needed to capture many of the intended applications of differential privacy and a number of the important differentially private primitives.
+
+We focus on concurrent composition, where an adversary can arbitrarily interleave its queries to several differentially private mechanisms, which may be feasible when differentially private query systems are deployed in practice.  We prove that when the interactive mechanisms being composed are pure differentially private, their concurrent composition achieves
+privacy parameters (with respect to pure or approximate differential privacy) that match the (optimal) composition theorem for noninteractive differential privacy.  We also prove a composition theorem for interactive mechanisms that satisfy approximate differential privacy.  That bound is weaker than even the basic (suboptimal) composition theorem for noninteractive differential privacy, and we leave closing the gap as a direction for future research, along
+with understanding concurrent composition for other variants of differential privacy.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Daniel Alabi (Harvard), Badih Ghazi (Google), Ravi Kumar (Google), Pasin Manurangsi (Google Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs65" class="paper-title">
+                        (A9) Private Rank Aggregation in the Central Model
+
+                    </a>
+
+                </div>
+                <div id="abs65" class="panel-footer panel-paper-footer collapse">
+                    In social choice theory, (Kemeny) rank aggregation is a well-studied
+problem where the goal is to combine rankings from multiple voters
+into a single ranking on the same set of items.
+Since rankings can reveal preferences of voters (which a voter
+might like to keep private), it is important to aggregate
+preferences in such a way to preserve privacy.
+In this work,
+we present differentially private algorithms for
+rank aggregation in the pure and approximate settings along with
+distribution-independent utility upper and lower bounds.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Badih Ghazi (Google), Junfeng He (Google), Kai Kohlhoff (Google), Ravi Kumar (Google), Pasin Manurangsi (Google Research), Vidhya Navalpakkam (Google), Nachiappan Valliappan‎ (Google)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs66" class="paper-title">
+                        (A10) Differentially Private Heatmaps
+
+                    </a>
+
+                </div>
+                <div id="abs66" class="panel-footer panel-paper-footer collapse">
+                    We consider the task of producing heatmaps from users' aggregated data while protecting their privacy. We give a differentially private (DP) algorithm for this task and demonstrate its advantages over previous algorithms on  real-world datasets.
+
+Our core algorithmic primitive is a DP procedure that takes in a set of distributions and produces an output that is close in Earth Mover's Distance (EMD) to the average of the inputs. We prove theoretical bounds on the error of our algorithm under a certain sparsity assumption and that these are essentially optimal.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Graham Cormode (Facebook), Igor Markov (Facebook)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs7" class="paper-title">
+                        (B1) Bit-efficient Numerical Aggregation and Stronger Privacy for Trust in Federated Analytics
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2108.01521" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs7" class="panel-footer panel-paper-footer collapse">
+                    Private data generated by edge devices --- from smart phones to automotive electronics --- are highly informative when aggregated but can be damaging when mishandled.
+A variety of solutions are being explored but
+have not yet won the public's trust and full backing of mobile platforms. In this work, we propose numerical aggregation protocols that empirically improve upon prior art, while providing comparable local differential privacy guarantees. Sharing a single private bit per value supports ($i$) privacy metering that enables privacy controls and ($ii$) guarantees that are not covered by differential privacy. We put emphasis on the ease of implementation, compatibility with existing methods, and compelling empirical performance.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Theo Jourdan (Insa-Lyon, CITI, Inria), Antoine Boutet (Insa-Lyon, CITI, Inria), Carole Frindel (Insa-Lyon, Creatis, Inserm)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs30" class="paper-title">
+                        (B2) Privacy Assessment of Federated Learning using Private Personalized Layers
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2106.08060" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs30" class="panel-footer panel-paper-footer collapse">
+                    Federated Learning (FL) is a collaborative scheme to train a learning model across multiple participants without sharing data.
+While FL is a clear step forward towards enforcing users’ privacy, different inference attacks have been developed.
+In this paper, we quantify the utility and privacy trade-off of a FL scheme using private personalized layers.
+While this scheme has been proposed as local adaptation to improve the accuracy of the model through local personalization, it has also the advantage to minimize the information about the model exchanged with the server. However, the privacy of such a scheme has never been quantified.
+Our evaluations using motion sensor dataset show that personalized layers speed up the convergence of the model and slightly improve the accuracy for all users compared to a standard FL scheme while better preventing both attribute and membership inferences compared to a FL scheme using local differential privacy.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Naman Agarwal (Google Research), Peter Kairouz (Google Research), Ziyu Liu (Google Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs41" class="paper-title">
+                        (B3) The Skellam Mechanism for Differentially Private Federated Learning
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs41" class="panel-footer panel-paper-footer collapse">
+                    We introduce the multi-dimensional Skellam mechanism, a discrete differential privacy mechanism based on the difference of two independent Poisson random variables. To quantify its privacy guarantees, we analyze the privacy loss distribution via a numerical evaluation and provide a sharp bound on the Rényi divergence between two shifted Skellam distributions. While useful in both centralized and distributed privacy applications, we investigate how it can be applied in the context of federated learning with secure aggregation under communication constraints. Our theoretical findings and extensive experimental evaluations demonstrate that the Skellam mechanism provides the same privacy-accuracy trade-offs as the continuous Gaussian mechanism, even when the precision is low. More importantly, Skellam is closed under summation and sampling from it only requires sampling from Poisson -- an efficient routine that ships with all machine learning and data analysis software packages. These features, along with its discrete nature and competitive privacy-accuracy trade-offs, make it an attractive alternative to the newly introduced discrete Gaussian mechanism.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Virendra Marathe (Oracle Labs), Pallika Kanani (Oracle Labs)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs42" class="paper-title">
+                        (B4) Subject Granular Differential Privacy in Federated Learning
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final42.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs42" class="panel-footer panel-paper-footer collapse">
+                    Differential Privacy (DP) enforcement in Federated Learning (FL) appears at two granularities in the literature: (i) item level, and (ii) user level. In this paper, we consider a third granularity of privacy – data subject level privacy, where a subject is an individual whose private information is embodied by several data items either confined within a single federation user or distributed across multiple federation users. Neither item level nor user level privacy are sufficient to enforce subject level privacy. We formally define the notion if subject level DP for FL, and analyze its differences with item and user level DP guarantees. Furthermore, we present two algorithms that enforce subject level DP that build on the notion of group differential privacy. In the process we make some interesting observations: Enforcement of subject level privacy at individual users entails the same privacy even when subjects’ data items are distributed over multiple users. Additionally, while both item and user level DP are insufficient to enforce subject level DP, Local Differential Privacy guarantees subject level privacy, even when a subject’s data items span across multiple users.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Maxence Noble (Ecole Polytechnique, Paris), Aurélien Bellet (INRIA), Aymeric Dieuleveut (Ecole Polytechnique, Paris)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs56" class="paper-title">
+                        (B5) Differentially Private Federated Learning on Heterogeneous Data
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="Link coming soon" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs56" class="panel-footer panel-paper-footer collapse">
+                    Federated Learning (FL) is a paradigm for large-scale distributed learning which faces two key challenges: (i) efficient training from highly heterogeneous user data, and (ii) protecting the privacy of participating users. In this work, we propose a novel FL approach (DP-SCAFFOLD) to tackle these two challenges together by incorporating Differential Privacy (DP) constraints into the popular SCAFFOLD algorithm. We focus on the challenging setting where users communicate with a ``honest-but-curious'' server without any trusted intermediary, which requires to ensure privacy not only towards a third-party with access to the final model but also towards the server who observes all user communications. Using advanced results from DP theory, we establish the convergence of our algorithm for convex and non-convex objectives.
+Our analysis clearly highlights the privacy-utility trade-off under data heterogeneity, and demonstrates the superiority of DP-SCAFFOLD over the state-of-the-art algorithm DP-FedAvg when the number of local updates and the level of heterogeneity grow. Our numerical results confirm our analysis and show that DP-SCAFFOLD provides significant gains in practice.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Jordan Awan (Purdue University), Salil Vadhan (Harvard University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs22" class="paper-title">
+                        (C1) Canonical Noise and Private Hypothesis Tests
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/pdf/2108.04303.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs22" class="panel-footer panel-paper-footer collapse">
+                    In the setting of $f$-DP, we propose the concept \emph{canonical noise distribution} (CND) which captures whether an additive privacy mechanism is tailored for a given $f$, and give a construction of a CND for an arbitrary tradeoff function $f$. We show that private hypothesis tests are intimately related to CNDs, allowing for the release of private $p$-values at no additional privacy cost as well as the construction of uniformly most powerful (UMP) tests for binary data. We apply our techniques to difference of proportions testing.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Jamie Hayes (Google DeepMind), Borja Balle (Google DeepMind), Pawan Mudigonda (Google DeepMind)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs25" class="paper-title">
+                        (C2) Learning to be adversarially robust and differentially private
+
+                    </a>
+
+                </div>
+                <div id="abs25" class="panel-footer panel-paper-footer collapse">
+                    We study the difficulties in learning that arise from robust and differentially private optimization.
+We first study convergence of gradient descent based adversarial training with differential privacy, taking a simple binary classification task on linearly separable data as an illustrative example.
+We compare the gap between adversarial and nominal risk in both private and non-private settings, showing that the data dimensionality dependent term introduced by private optimization compounds the difficulties of learning a robust model.
+After this, we discuss what parts of adversarial training and differential privacy hurt optimization, identifying that the size of adversarial perturbation and clipping norm in differential privacy both increase the curvature of the loss landscape, implying poorer generalization performance.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Archit Uniyal (Panjab University), Rakshit Naidu (Carnegie Mellon University), Sasikanth Kotti (IIT Jodhpur), Patrik Joslin Kenfack (Innopolis University), Sahib Singh (OpenMined; Ford Motor Company), Fatemeh Mireshghallah (University of California-San Diego), Andrew Trask (OpenMined)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs61" class="paper-title">
+                        (C3) DP-SGD vs PATE: Which Has Less Disparate Impact on Model Accuracy?
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/pdf/2106.12576.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs61" class="panel-footer panel-paper-footer collapse">
+                    Recent advances in differentially private deep learning have demonstrated that the application of differential privacy-- specifically the DP-SGD algorithm-- has a disparate impact on different sub-groups in the population, which leads to a significantly high drop-in model utility for sub-populations that are under-represented (minorities), compared to well-represented ones. In this work, we aim to compare PATE, another mechanism for training deep learning models using differential privacy, with DP-SGD in terms of fairness. We show that PATE does have a disparate impact too, however, it is much less severe than DP-SGD. We draw insights from this observation on what might be promising directions in achieving better fairness-privacy trade-offs.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Rakshit Naidu (Carnegie Mellon University), Aman Priyanshu (Manipal Institute of Technology), Sasikanth Kotti (IIT Jodhpur), Haofan Wang (Carnegie Mellon University), Fatemeh Mireshghallah (University of California-San Diego), Aadith Kumar (University of Pennsylvania)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs62" class="paper-title">
+                        (C4) When Differential Privacy Meets Interpretability: A Case Study
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2106.13203" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final62.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs62" class="panel-footer panel-paper-footer collapse">
+                    Given the increase in the use of personal data for training Deep Neural Networks (DNNs) in tasks such as medical imaging and diagnosis, differentially private training of DNNs is surging in importance and there is a large body of work focusing on providing better privacy-utility trade-off. However, little attention is given to the interpretability of these models, and how the application of DP  affects the quality of interpretations. We propose an extensive study into the effects of DP training on DNNs, especially on medical imaging applications, on the APTOS dataset.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Aman Priyanshu (Manipal Institute Of Technology), Rakshit Naidu (Carnegie Mellon University), Fatemeh Mireshghallah (University of California-San Diego), Mohammad Malekzadeh (Imperial College London)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs70" class="paper-title">
+                        (C5) Efficient Hyperparameter Optimization for Differentially Private Deep Learning
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2108.03888" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final70.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs70" class="panel-footer panel-paper-footer collapse">
+                    Tuning the hyperparameters in the differentially private stochastic gradient descent (DPSGD) is a fundamental challenge. Unlike the typical SGD, private datasets cannot be used many times for
+hyperparameter search in DPSGD; e.g., via a grid search. Therefore, there is an essential need for algorithms that, within a given search space, can find near-optimal hyperparameters for the best
+achievable privacy-utility tradeoffs efficiently. We formulate this problem into a general optimization framework for establishing a desirable privacy-utility tradeoff, and systematically study three cost-effective algorithms for being used in the proposed framework: evolutionary, Bayesian, and reinforcement learning. Our experiments, for hyperparameter tuning in DPSGD conducted on MNIST and CIFAR-10 datasets, show that these three algorithms significantly outperform the widely used grid search baseline. As this paper offers a first-of-a-kind framework for hyperparameter tuning in DPSGD, we discuss existing challenges and open directions for future studies. As we believe our work has implications to be utilized in the pipeline of private deep learning, we open-source our code at https://anonymous.4open.science/r/DP-HyperparamTuning-8AC1
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Marcel Keller (CSIRO's Data61), Ke Sun (CSIRO's Data61)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs9" class="paper-title">
+                        (D1) Secure Quantized Training for Deep Learning
+
+                    </a>
+
+                </div>
+                <div id="abs9" class="panel-footer panel-paper-footer collapse">
+                    We have implemented training of neural networks in secure multi-party
+computation (MPC) using quantization commonly used in the said
+setting. To the best of our knowledge, we are the first to present an
+MNIST classifier purely trained in MPC that comes within 0.2 percent
+of the accuracy of the same convolutional neural network trained via
+plaintext computation. More concretely, we have trained a network with
+two convolution and two dense layers to 99.2% accuracy in 25
+epochs. This took 3.5 hours in our MPC implementation (under one hour
+for 99% accuracy).
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Karthik Garimella (New York University), Nandan Jha (New York University), Brandon Reagen (New York University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs31" class="paper-title">
+                        (D2) Sisyphus: A Cautionary Tale of Using Low-Degree Polynomial Activations in Privacy-Preserving Deep Learning
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final31.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs31" class="panel-footer panel-paper-footer collapse">
+                    Privacy concerns in client-server machine learning have given rise to private inference (PI), where neural inference occurs directly on encrypted inputs. PI protects clients’ personal data and the server’s intellectual property. A common practice in PI is to use garbled circuits to compute nonlinear functions privately, namely ReLUs. However, garbled circuits suffer from high storage, bandwidth, and latency costs. To mitigate these issues, PI-friendly polynomial activation functions have been employed to replace ReLU. In this work, we ask: Is it feasible to substitute all ReLUs with low-degree polynomial activation functions for building deep, privacy-friendly neural networks? We explore this question by analyzing the challenges of substituting ReLUs with polynomials, starting with simple drop-and-replace solutions to novel, more involved replace-and-retrain strategies. We examine the limitations of each method and provide commentary on the use of polynomial activation functions for PI. We find all evaluated solutions suffer from the escaping activation problem: forward activation values inevitably begin to expand at an exponential rate away from stable regions of the polynomials, which leads to exploding values (NaNs) or poor approximations.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Karthik Nandakumar (Mohamed Bin Zayed University of Artificial Intelligence), Kanthi Sarpatwar (IBM T. J. Watson Research Center), Nalini Ratha (University of Buffalo), Sharath Pankanti (Microsoft), Roman Vaculin (IBM Research), Karthikeyan Shanmugam (IBM Research), James T Rayfield (IBM Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs33" class="paper-title">
+                        (D3) FHE-Friendly Distillation of Decision Tree Ensembles for Efficient Encrypted Inference
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs33" class="panel-footer panel-paper-footer collapse">
+                    Data privacy concerns often limit the use of cloud-based machine learning services for processing sensitive personal data. While fully homomorphic encryption (FHE) offers a potential solution by enabling computations on encrypted data, the challenge is to obtain accurate machine learning models that work efficiently within FHE limitations. Though deep neural networks have been very successful in many applications, decision tree ensembles are still considered the state-of-the-art for inference on tabular data. Existing approaches for encrypted inference based on decision trees simply replace hard comparison operations with soft comparators at the cost of accuracy. In this work, we propose a framework to distill knowledge extracted by decision tree ensembles to shallow neural networks (referred to as FDNets) that are highly conducive to encrypted inference. The proposed FDNets are FHE-friendly because they are obtained by searching for the best multilayer perceptron (MLP) architecture that minimizes the accuracy loss while operating within the given depth constraints. Furthermore, the FDNets can be trained using only synthetic data sampled from the training data distribution without the need for accessing the original training data. Extensive experiments on real-world datasets demonstrate that FDNets are highly scalable and can perform efficient inference on batched encrypted (134 bits of security) data with amortized time in milliseconds.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Hannah Keller (Technical University of Darmstadt), Helen Möllering (Technical University of Darmstadt), Hossein Yalame (Technical University of Darmstadt), Thomas Schneider (Technical University of Darmstadt)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs36" class="paper-title">
+                        (D4) Balancing Quality and Efficiency in Private Clustering with Affinity Propagation (Extended Abstract)
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://eprint.iacr.org/2021/825" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs36" class="panel-footer panel-paper-footer collapse">
+                    In many machine learning applications, input data consists of sensitive information from multiple sources. Privacy-preserving machine learning using secure computation enables multiple parties to compute on their joint data without disclosing their inputs to each other. In this work, we focus on clustering, an unsupervised machine learning technique that partitions data into groups. Previous works on privacy-preserving clustering often leak information and focus on the k-means algorithm, which provides only limited clustering quality and flexibility. We analyze several prominent clustering algorithms' capabilities and their compatibility with secure computation techniques and create an efficient, fully privacy-preserving clustering protocol of affinity propagation. Privacy-preserving affinity propagation does not require any input parameters and consists of operations that are relatively efficient with secure computation. As threat models, we consider passive security as well as active security with an honest and dishonest majority. We offer the first comparison of privacy-preserving clustering between these scenarios.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Nishat Koti (IISc Bangalore), Arpita Patra (IISc Bangalore), Rahul Rachuri (Aarhus University, Denmark), Ajith Suresh (IISc Bangalore)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs45" class="paper-title">
+                        (D5) Tetrad: Actively Secure 4PC for Secure Training and Inference
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://eprint.iacr.org/2021/755" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final45.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs45" class="panel-footer panel-paper-footer collapse">
+                    Mixing arithmetic and boolean circuits to perform privacy-preserving machine learning has become increasingly popular. Towards this, we propose a framework for the case of four parties with at most one active corruption called Tetrad.
+
+Tetrad works over rings and supports two levels of security, fairness and robustness. The fair multiplication protocol costs 5 ring elements, improving over the state-of-the-art Trident~(Chaudhari et al. NDSS'20). A key feature of Tetrad is that robustness comes for free over fair protocols. Other highlights across the two variants include (a) probabilistic truncation without overhead, (b) multi-input multiplication protocols, and (c) conversion protocols to switch between the computational domains, along with a tailor-made garbled circuit approach.
+
+Benchmarking of Tetrad for both training and inference is conducted over deep neural networks such as LeNet and VGG16. We found that Tetrad is up to 4 times faster in ML training and up to 5 times faster in ML inference. Tetrad is also lightweight in terms of deployment cost, costing up to 6 times less than Trident.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Deevashwer Rathee (UC Berkeley), Mayank Rathee (UC Berkeley), Rahul Kranti Kiran Goli (Microsoft Research), Divya Gupta (Microsoft Research), Rahul Sharma (Microsoft Research), Nishanth Chandran (Microsoft Research), Aseem Rastogi (Microsoft Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs49" class="paper-title">
+                        (D6) SIRNN: A Math Library for Secure RNN Inference
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs49" class="panel-footer panel-paper-footer collapse">
+                    Complex machine learning (ML) inference algorithms like recurrent neural networks (RNNs) use standard functions from math
+libraries like exponentiation, sigmoid, tanh, and reciprocal of square
+root. Although prior work on secure 2-party inference provides
+specialized protocols for convolutional neural networks (CNNs),
+existing secure implementations of these math operators rely on
+generic 2-party computation (2PC) protocols that suffer from high
+communication. We provide new specialized 2PC protocols for
+math functions that crucially rely on lookup-tables and mixed-
+bitwidths to address this performance overhead; our protocols for
+math functions communicate up to 423× less data than prior work.
+Furthermore, our math implementations are numerically precise,
+which ensures that the secure implementations preserve model
+accuracy of cleartext. We build on top of our novel protocols to
+build SiRnn, a library for end-to-end secure 2-party DNN inference,
+that provides the first secure implementations of an RNN operating
+on time series sensor data, an RNN operating on speech data, and a
+state-of-the-art ML architecture that combines CNNs and RNNs for
+identifying all heads present in images. Our evaluation shows that
+SiRnn achieves up to three orders of magnitude of performance
+improvement when compared to inference of these models using
+an existing state-of-the-art 2PC framework.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Aditya Hegde (IIIT-Bangalore), Helen Möllering (TU Darmstadt), Thomas Schneider (TU Darmstadt), Hossein Yalame (TU Darmstadt)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs50" class="paper-title">
+                        (D7) SoK: Privacy-preserving Clustering (Extended Abstract)
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://www.sciendo.com/article/10.2478/popets-2021-0068" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs50" class="panel-footer panel-paper-footer collapse">
+                    Clustering is a popular unsupervised machine learning technique that groups similar input elements into clusters. It is used in many areas ranging from business analysis to health care. In many of these applications, sensitive information is clustered that should not be leaked. Moreover, nowadays it is often required to combine data from multiple sources to increase the quality of the analysis as well as to outsource complex computation to powerful cloud servers. This calls for efficient privacy-preserving clustering. In this work, we systematically analyze the state-of-the-art in privacy-preserving clustering. We implement and benchmark today's four most efficient fully private clustering protocols by Cheon et al. (SAC'19), Meng et al. (ArXiv'19), Mohassel et al. (PETS'20), and Bozdemir et al. (ASIACCS'21) with respect to communication, computation, and clustering quality. We compare them, assess their limitations, and conclude with open challenges.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Arpita Patra (Indian Institute of Science), Thomas Schneider (TU Darmstadt), Ajith Suresh (Indian Institute of Science), Hossein Yalame (TU Darmstadt)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs51" class="paper-title">
+                        (D8) ABY2.0: New Efficient Primitives for 2PC with Applications to Privacy Preserving Machine Learning (Extended Abstract)
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://www.usenix.org/system/files/sec21-patra.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs51" class="panel-footer panel-paper-footer collapse">
+                    Secure Multi-party Computation (MPC) allows a set of mutually distrusting parties to jointly evaluate a function on their private inputs while maintaining input privacy. In this work, we improve semi-honest secure two-party computation (2PC) over rings, specially for privacy-preserving machine learning, with a focus on the efficiency of the online phase. We extend our techniques to multi-input multiplication gates without inflating the online communication, i.e., it remains independent of the fan-in. By doing so, we construct efficient protocols for several privacy-preserving machine learning (PPML) primitives such as scalar product, matrix multiplication, ReLU, and maxpool. The online communication of our scalar product is two ring elements {\em irrespective} of the vector dimension, which is a feature achieved for the first time in PPML literature. We implement and benchmark training and inference of Logistic Regression and Neural Networks over LAN and WAN networks. For training, we improve online runtime (both for LAN and WAN) over SecureML (Mohassel et al., IEEE S\&P'17) in the range $1.5\times$--$6.1\times$, while for inference, the improvements are in the range of $2.5\times$--$754.3\times$.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Mahimna Kelkar (Cornell University, Cornell Tech), Phi Hung Le (Google), Mariana Raykova (Google), Karn Seth (Google)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs52" class="paper-title">
+                        (D9) Secure Poisson Regression
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://eprint.iacr.org/2021/208.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs52" class="panel-footer panel-paper-footer collapse">
+                    We introduce the first construction for secure two-party computation of Poisson regression, which enables two parties who hold shares of the input samples to learn only the resulting Poisson model while protecting the privacy of the inputs.
+
+Our construction relies on new protocols for secure fixed-point exponentiation and correlated matrix multiplications. Our secure exponentiation construction avoids expensive bit decomposition and achieves orders of magnitude improvement in both online and offline costs over state of the art works. As a result, the dominant cost for our secure Poisson regression are matrix multiplications with one fixed matrix. We introduce a new technique, called correlated Beaver triples, which enables many such multiplications at the cost of roughly one matrix multiplication. This further brings down the cost of secure Poisson regression.
+
+We implement our constructions and show their extreme efficiency. In a LAN setting, our secure exponentiation for 20-bit fractional precision takes less than 0.07ms with a batch-size of 100,000. One iteration of secure Poisson regression on a dataset with 10,000 samples with 1000 binary features needs about 65.82s in the offline phase, 55.14s in the online phase and 17MB total communication. For several real datasets this translates into training that takes seconds and only a couple of MB communication.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Seyma Selcan Mağara (Sabancı University), Ceren Yildirim (Sabancı University), Ferhat Yaman (North Carolina State University), Berke Dilekoglu (Sabancı University), Furkan Reha Tutas (Sabancı University), Erdinç Öztürk (Sabancı University), Kamer Kaya (Sabanci University), Oznur Tastan (Sabancı University), Erkay Savas (Sabanci University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs74" class="paper-title">
+                        (D10) ML with HE: Privacy Preserving Machine Learning Inferences for Genome Studies
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2110.11446#" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs74" class="panel-footer panel-paper-footer collapse">
+                    Preserving the privacy and security of big data in the context of cloud computing, while maintaining a certain level of efficiency of its processing remains to be a subject, open for improvement. One of the most popular applications epitomizing said concerns is found to be useful in genome analysis. This work proposes a secure multi-label tumor classification method using homomorphic encryption, whereby two different machine learning algorithms, SVM and XGBoost, are used to classify the encrypted genome data of different tumor types.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Ana-Maria Cretu (Imperial College London), Federico Monti (Twitter), Stefano Marrone (University of Naples Federico II), Xiaowen Dong (University of Oxford), Michael Bronstein (Imperial College London), Yves-Alexandre de Montjoye (Imperial College London)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs6" class="paper-title">
+                        (E1) Interaction data are identifiable even across long periods of time
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs6" class="panel-footer panel-paper-footer collapse">
+                    Fine-grained records of people's interactions, both offline and online, are collected at a large scale. These data contain sensitive information about whom we meet, talk to, and when. We demonstrate here how people's interaction behavior is stable over long periods of time and can be used to identify individuals in anonymous datasets. Our attack learns the profile of an individual using geometric deep learning and triplet loss optimization. In a mobile phone metadata dataset of more than 40k people, it correctly identifies 52\% of individuals based on their $2$-hop interaction graph. We further show that the profiles learned by our method are stable over time and that 24\% of people are still identifiable after 20 weeks, thus making identification a real risk in practice. Finally, we show that having access to more auxiliary data can improve the performance of the attack, albeit with decreasing returns. Our results provide strong evidence that disconnected and even re-pseudonymized interaction data can be linked together making them likely to be personal data under the European Union's General Data Protection Regulation.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Chuan Xu (Inria), Giovanni Neglia (Inria)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs26" class="paper-title">
+                        (E2) What else is leaked when eavesdropping federated learning?
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs26" class="panel-footer panel-paper-footer collapse">
+                    In this paper, we initiate the study of \emph{local model reconstruction attacks} for federated learning, where a honest-but-curious adversary eavesdrops the messages exchanged between the client and the server and reconstructs the local model of the client. The success of this attack enables better performance of other known attacks, such as the membership attack, attribute inference attacks, etc. We provide analytical guarantees for the success of this attack when training a linear least squares problem with full batch size and arbitrary number of local steps. One heuristic is proposed to generalize the attack to other machine learning problems. Experiments are conducted on logistic regression tasks, showing high reconstruction quality, especially when clients' datasets are highly heterogeneous (as it is common in federated learning).
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Ahmed Salem (CISPA Helmholtz Center for Information Security), Santiago Zanella-Béguelin (Microsoft Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs46" class="paper-title">
+                        (E3) HoHo: A Hop-on Hop-off Attack Against Optimized Multiple Encoding
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final46.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs46" class="panel-footer panel-paper-footer collapse">
+                    Protocols satisfying Local Differential Privacy (LDP) allow users to protect the privacy of data they contribute for aggregation without the need to trust the aggregator. Optimal Multiple Encoding (OME) is a novel protocol presented at SIGIR 2020 to noisily encode textual data, which has been shown to enable learning from encoded text without hurting utility. OME encodes real-valued word embeddings as fixed-length binary strings and perturbs even and odd bits independently, flipping them with probabilities determined by the length of the encoding, the privacy budget $\epsilon$, and a randomization factor $\lambda$.
+We show that the purported proof that OME satisfies $\epsilon$-LDP independently of the encoding length and $\lambda$ cannot hold.
+We present linkability and partial reconstruction attacks against OME and experimentally show that OME provides no meaningful privacy for parameter values that preserve utility.
+We confirm this finding using DP-Sniper, an off-the-shelf tool for discovery of differential privacy violations. For the same parameters used to experimentally show the utility of OME, DP-Sniper finds distinguishing attacks that imply that the privacy budget spent is at least \num{4600}x higher than expected.
+We finally revisit the proof of LDP of OME and show that the level of privacy that it actually provides scales linearly with $\lambda$ and exponentially on the encoding length, confirming our experimental findings.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Ganesh Del Grosso (INRIA, Ecole Polytechnique), Georg Pichler (TU Wien), Catuscia Palamidessi (INRIA, Ecole Polytechnique), Pablo Piantanida (Centrale Supelec, Universite Paris Saclay)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs48" class="paper-title">
+                        (E4) Formalizing Attribute and Membership Inference Attacks on Machine Learning Models
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final48.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs48" class="panel-footer panel-paper-footer collapse">
+                    Recent work has demonstrated that machine learning models can leak information about the training data. We propose a novel and flexible formalism that captures both membership and attribute inference attacks.  Within this framework, we identify and bound the success rate of the worst-case membership inference attack,  connecting it to the generalization gap of the target model.  We illustrate our approach by applying it to synthetic data and classification tasks on natural images.  In addition, we consider several strategies for attribute inference attacks and we compare their effectiveness.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Huseyin A. Inan (Microsoft Research), Osman Ramadan (Microsoft Corporation), Lukas Wutschitz (Microsoft Corporation), Daniel Jones (Microsoft Corporation), Victor Rühle (Microsoft Corporation), James Withers (Microsoft Corporation), Robert Sim (Microsoft Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs58" class="paper-title">
+                        (E5) Training Data Leakage Analysis in Language Models
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/abs/2101.05405" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final58.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs58" class="panel-footer panel-paper-footer collapse">
+                    Recent advances in neural network based language models lead to successful deployments of such models, improving user experience in various applications. It has been demonstrated that strong performance of language models comes along with the ability to memorize rare training samples, which poses serious privacy threats in case the model is trained on confidential user content. In this work, we introduce a methodology that investigates identifying the user content in the training data that could be leaked under a strong and realistic threat model. Motivated from the notion of plausible deniability, we introduce a privacy metric and illustrate how the proposed metric can be utilized to investigate the efficacy of mitigations such as differentially private model training under realistic deployment scenarios.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Nicholas Carlini (Google), Sanjam Garg (University of California, Berkeley and NTT Research), Somesh Jha (University of Wisconsin), Saeed Mahloujifar (Princeton), Mohammad Mahmoody (University of Virginia), Florian Tramèr (Stanford University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs69" class="paper-title">
+                        (E6) NeuraCrypt is not private
+
+                        <font color="#d07200"><b>(contributed talk)</b></font>
+
+                    </a>
+
+                </div>
+                <div id="abs69" class="panel-footer panel-paper-footer collapse">
+                    NeuraCrypt (Yara et al. arXiv 2021) is an algorithm that converts a sensitive dataset to
+an encoded dataset so that
+(1) it is still possible to train machine learning models on
+the encoded data, but
+(2) an adversary who has access only to the encoded dataset can
+not learn much about the original sensitive dataset.
+We break NeuraCrypt's privacy claims, by perfectly solving the authors' public challenge, and by showing that NeuraCrypt does not satisfy
+the formal privacy definitions posed in the original paper.
+Our attack consists of a series of boosting steps that,
+coupled with various design flaws,
+turns a 1% attack advantage into a 100% complete break of the scheme.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Yuanfeng Chen (Shanghai Key Laboratory of Privacy-Preserving Computation), Gaofeng Huang (Shanghai Key Laboratory of Privacy-Preserving Computation), Junjie Shi (Shanghai Key Laboratory of Privacy-Preserving Computation), Xiang Xie (Shanghai Key Laboratory of Privacy-Preserving Computation), Yilin Yan (Shanghai Key Laboratory of Privacy-Preserving Computation)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs12" class="paper-title">
+                        (F1) Rosetta: A Privacy-Preserving Framework Based on TensorFlow
+
+                    </a>
+
+                </div>
+                <div id="abs12" class="panel-footer panel-paper-footer collapse">
+                    The privacy concerns that arise during the industrial practice of machine learning have drawn much more attentions in recent years. Some attempts have been made to design  frameworks that can empower machine learning with privacy protection abilities. Such frameworks should be easy to use for current machine learning practitioners, be extensible for security developers to integrate new cutting-edge cryptographic protocols, and be flexible for optimizations for specific applications.
+
+In this paper, we propose Rosetta, a  privacy-preserving framework based on TensorFlow, that aims to be such a substrate for researchers and developers from both machine learning and cryptography community.  With Rosetta, users can still use the native TensorFlow APIs to express their learning tasks which means the built-in sophisticated functionality such as dataflow graph optimization and auto-grad are all compatible. With the back-end abstraction layer, Rosetta is capable to integrate with various cryptographic protocols including secure multi-party computation (MPC), zero-knowledge proof (ZKP) and homomorphic encryption (HE).
+
+With Rosetta, users could switch from plaintext mode to privacy-preserving mode by just adding a few lines of codes. To show the versatility, in addition to support joint training and oblivious inference with MPC protocols, Rosetta also integrates the very recent practical ZKP algorithm \textsf{Mystique} [Weng et al.,Usenix Security'21] to prove  correctness of an inference on a private image using a committed (private) ResNet-101 model. This is the first  privacy-preserving system to support ZKP about neural-network models with over 100 layers with virtually no loss of accuracy.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Jordan Awan (Purdue University), Vinayak Rao (Purdue University)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs23" class="paper-title">
+                        (F2) Privacy-Aware Rejection Sampling
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/pdf/2108.00965.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs23" class="panel-footer panel-paper-footer collapse">
+                    Differential privacy (DP) offers strong protection against adversaries with arbitrary side-information and computational power. However, many implementations of DP mechanisms leave themselves vulnerable to side channel attacks, such as timing attacks. As many privacy mechanisms, such as the exponential mechanism, do not lend themselves to easy implementations, when sampling methods such as MCMC or rejection sampling are used, the runtime can leak privacy. In this work, we quantify the privacy cost due to the runtime of a rejection sampler in terms of  $(\epsilon,\delta)$-DP. We also propose three modifications to the rejection sampling algorithm, to protect against timing attacks by making the runtime independent of the data. We also use our techniques to develop an adaptive rejection sampler for log-Holder densities, which also has data-independent runtime.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Rohan Anil (Google Brain), Badih Ghazi (Google Research), Vineet Gupta (Google Inc), Ravi Kumar (Google Research), Pasin Manurangsi (Google Research)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs47" class="paper-title">
+                        (F3) Large-Scale Differentially Private Language Models
+
+                    </a>
+
+                </div>
+                <div id="abs47" class="panel-footer panel-paper-footer collapse">
+                    In this work, we demonstrate that large-scale pretraining of BERT-Large \citep{devlin2018bert} with differentially private SGD (DP-SGD) can yield high accuracy.  We show that combined with a careful implementation, scaling up batch sizes to millions of examples improves the utility of the DP-SGD step for BERT; we also improve the efficiency of this procedure by using an increasing batch size schedule.  Our experiments achieve a masked language model accuracy of 60.5\% at a mini-batch size of $\sim$2M, for $\eps = 5.36$.  To put this number in perspective, non-private BERT models achieve an accuracy of $\sim$70\%.
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Erkam Uzun (Georgia Institute of Technology), Simon P. Chung (Georgia Institute of Technology), Vladimir Kolesnikov (Georgia Institute of Technology), Alexandra Boldyreva (Georgia Institute of Technology), Wenke Lee (Georgia Institute of Technology)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs53" class="paper-title">
+                        (F4) Privacy Preserving Surveillance from Fuzzy Labeled Private Set Intersection
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://www.usenix.org/conference/usenixsecurity21/presentation/uzun" class="link-paper">[URL]</a>
+
+                    &nbsp;&nbsp;<a href="pdfs/ppml21-final53.pdf" class="link-paper">[PDF]</a>
+
+                </div>
+                <div id="abs53" class="panel-footer panel-paper-footer collapse">
+                    The explosive growth of  biometrics use  (e.g., in surveillance) poses a persistent challenge to keep biometric data private without  sacrificing the apps' functionality.
+
+We consider private querying of a real-life biometric scan (e.g., a person's face) against a private biometric database.  The querier learns only the label(s) of a matching scan(s) (e.g. a person's name), and the database server learns nothing.
+
+We introduce \textit{Fuzzy} Labeled Private Set Intersection (FLPSI), a primitive  computing the intersection of noisy input sets by considering closeness/similarity instead of equality.
+
+Our FLPSI protocol's communication  is \textit{sublinear}  in database size and is  concretely efficient.  We implement it and apply it to facial search by integrating with our fine-tuned toolchain that maps face images into Hamming space.
+FLPSI achieves high performance with concretely small network usage:
+for a $1$M-row database, online time is 1.66s (WAN) and 1.46s (fast LAN) with 40.8MB of data transfer in online phase and 37.5s in offline precomputation.
+This improves the state-of-the-art work (SANNS) by $9-25\times$ (on WAN) and $1.2-4\times$ (on fast LAN).
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-paper">
+                <div class="panel-body panel-paper-body">
+                    <span class="paper-author">
+                        Arjun Soin (Stanford University), Pratik Bhatu (Microsoft Research), Rohit Takhar (CARING Research), Nishanth Chandran (Microsoft Research), Divya Gupta (Microsoft Research), Javier Alvarez-Valle (Microsoft Research), Rahul Sharma (Microsoft Research), Vidur Mahajan (CARING Research), Matthew Lungren (Stanford University School of Medicine)
+                    </span><br />
+
+                    <a data-toggle="collapse" href="#abs54" class="paper-title">
+                        (F5) Multi-Institution Encrypted Medical Imaging AI Validation Without Data Sharing
+
+                    </a>
+
+                    &nbsp;&nbsp;<a href="https://arxiv.org/pdf/2107.10230.pdf" class="link-paper">[URL]</a>
+
+                </div>
+                <div id="abs54" class="panel-footer panel-paper-footer collapse">
+                    Adoption of artificial intelligence medical imaging applications is often impeded by barriers between healthcare systems and algorithm developers given that access to both private patient data and commercial model IP is important to perform pre-deployment evaluation. This work investigates a framework for secure, privacy-preserving and AI-enabled medical imaging inference using CrypTFlow2, a state-of-the-art end-to-end compiler allowing cryptographically secure 2-party Computation (2PC) protocols between the machine learning model vendor and target patient data owner.
+A common DenseNet-121 chest x-ray diagnosis model was evaluated on multi-institutional chest radiographic imaging datasets both with and without CrypTFlow2
+on two test sets spanning seven sites across the US and India, and comprising 1,149 chest x-ray images. We measure comparative AUROC performance between secure and insecure inference in multiple pathology classification tasks, and explore model output distributional shifts and resource constraints introduced by secure model inference. Secure inference with CrypTFlow2 demonstrated no significant difference in AUROC for all diagnoses, and model outputs from secure and insecure inference methods were distributionally equivalent.
+The use of CrypTFlow2 may allow off-the-shelf secure 2PC between healthcare systems and AI model vendors for medical imaging,  without changes in performance, and can facilitate scalable pre-deployment infrastructure for real-world secure model evaluation without exposure to patient data or model IP.
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
