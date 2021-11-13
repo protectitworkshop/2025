@@ -6,6 +6,7 @@
 import csv
 import json
 
+
 def format_paper(paper_dict, talks, poster_mapping):
     title = """
                         <a data-toggle="collapse" href="#abs{id}" class="paper-title">
@@ -21,11 +22,11 @@ def format_paper(paper_dict, talks, poster_mapping):
     if 'url' in paper_dict:
         title += """
                         &nbsp;&nbsp;<a href="{url}" class="link-paper">[URL]</a>
-""".format(url = paper_dict['url'])
+""".format(url=paper_dict['url'])
     if 'pdf' in paper_dict:
         title += """
                         &nbsp;&nbsp;<a href="pdfs/{pdf}" class="link-paper">[PDF]</a>
-""".format(pdf = paper_dict['pdf'])
+""".format(pdf=paper_dict['pdf'])
     return """
                 <div class="panel panel-default panel-paper">
                     <div class="panel-body panel-paper-body">
@@ -39,6 +40,7 @@ def format_paper(paper_dict, talks, poster_mapping):
                     </div>
                 </div>
 """.format(authors=paper_dict['authors'], title=title, id=paper_dict['id'], abstract=paper_dict['abstract'])
+
 
 def read_papers(filename):
     result = []
@@ -65,6 +67,7 @@ def read_papers(filename):
             result += [paper]
     return result
 
+
 def read_poster_mapping(filename):
     result = {}
     with open(filename) as f:
@@ -73,9 +76,10 @@ def read_poster_mapping(filename):
             result[int(row['ID'])] = row['Poster Area']
     return result
 
+
 if __name__ == '__main__':
     # Define inputs.
-    talks = [6,22,26,33,41,49,69]
+    talks = [6, 22, 26, 33, 41, 49, 69]
     csv_file = "data/ppml21-data.csv"
     json_file = "data/ppml21-data.json"
 
@@ -87,7 +91,7 @@ if __name__ == '__main__':
     def by_poster_area(p):
         area = poster_mapping[p['id']]
         return (area[0], int(area[1:]))
-    papers.sort(key = by_poster_area)
+    papers.sort(key=by_poster_area)
 
     # Print formatted papers.
     print("\n".join([format_paper(p, talks, poster_mapping) for p in papers]))
