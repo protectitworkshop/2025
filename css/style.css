@@ -371,14 +371,28 @@
                 border-radius: 0;
             }
 
-            .btn-default {
+            .btn-black {
+                border: 1px solid #d07200;
+                color: #d07200;
+                background-color: black;
+            }
+
+            .btn-black:hover,
+            .btn-black:focus {
+                border: 1px solid #d07200;
+                outline: none;
+                color: black;
+                background-color: #d07200;
+            }
+
+            .btn-transparent {
                 border: 1px solid #d07200;
                 color: #d07200;
                 background-color: transparent;
             }
 
-            .btn-default:hover,
-            .btn-default:focus {
+            .btn-transparent:hover,
+            .btn-transparent:focus {
                 border: 1px solid #d07200;
                 outline: none;
                 color: black;
