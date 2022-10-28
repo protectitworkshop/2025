@@ -64,9 +64,9 @@
                     <li>
                         <a class="page-scroll" href="#speakers">Invited Speakers</a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a class="page-scroll" href="#schedule">Schedule</a>
-                    </li> -->
+                    </li>
                     <!-- <li>
                         <a class="page-scroll" href="#papers">Accepted Papers</a>
                     </li> -->
@@ -149,6 +149,143 @@
     </section>
 
     <!-- Schedule Section -->
+    <section id="schedule" class="container content-section text-center">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>Schedule</h2>
+                <p>
+                    The workshop is split into two sessions, one in the morning and one in the afternoon.
+                    At the end of each session, we will have a slot for discussing recent open research questions.
+                    The talks will also be live-streamed via <a href="https://univ-lille-fr.zoom.us/j/96413713962?pwd=RVB0M2lxMGI3cTZyemZwbDc5L1BhZz09">Zoom</a>.
+                </p>
+                <table class="table schedule">
+                    <tbody>
+                         <!-- Block slot -->
+                         <tr>
+                            <td colspan="2" class="block">Morning Session</td>
+                        </tr>
+                        <!-- Basic slot -->
+                        <tr>
+                            <td class="time">11:00–11:10</td>
+                            <td class="slot">Welcome & Introduction</td>
+                        </tr>
+                        <!-- Invited slot -->
+                        <tr>
+                            <td class="time">11:10–11:40</td>
+                            <td class="slot talk">
+                                <a href="#tabs1" data-toggle="collapse" class="accordion-toggle">
+                                    Kunal Talwar
+                                    &mdash;
+                                    Shifted Divergences for Privacy and Mixing
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs1">
+                                    This talk will discuss a line of work on Shifted Divergences, a notion of distance between distributions over real vectors that is regularized by optimal transport. I will show two applications of this concept, one to differential privacy, and one to rapid mixing.
+
+                                    The first result shows a tight privacy analysis of the noisy SGD algorithm and its variants for smooth convex loss function functions. We show that the privacy cost of the algorithm, that grows initially with the number of iterations, plateaus after a certain number of steps.
+
+                                    The second result studies the convergence of the Langevin Monte Carlo algorithm, a classical algorithm for sampling from a log concave distribution. We give a tight bound on the mixing time of the (discretized) Langevin algorithm to its stationary distribution, in various measures of distance.
+
+                                    No differential privacy background will be assumed. Based on joint works with Jason Altschuler, Vitaly Feldman, Ilya Mironov and Abhradeep Thakurta.
+
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- Invited slot -->
+                        <tr>
+                            <td class="time">11:40–12:10</td>
+                            <td class="slot talk">
+                                <a href="#tabs2" data-toggle="collapse" class="accordion-toggle">
+                                    Clément Canonne
+                                    &mdash;
+                                    Differentially Private Statistical Inference: A Few Ideas Go a Long Way
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs2">
+                                    I will discuss some old, recent, and ongoing work on distributed learning and testing of discrete data under various privacy models, with a focus on distributed settings where the (sensitive) dataset is spread across many users. I will focus on a handful of simple, yet quite powerful ideas which, as the title of the talk suggests, go a long way in obtaining private and sample-optimal testing algorithms in a variety of settings.
+
+                                    Based on joint works with Jayadev Acharya, Abigail Gentle, Cody Freitag, Hongyi Lyu, Yucheng Sun, Ziteng Sun, and Himanshu Tyagi; as well as many other works I did not participate in but am very happy to survey and use.
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- Basic slot -->
+                        <tr>
+                            <td class="time">12:10–12:30</td>
+                            <td class="slot">Open Questions</td>
+                        </tr>
+
+
+                         <!-- Block slot -->
+                         <tr>
+                            <td colspan="2" class="block">Afternoon Session</td>
+                        </tr>
+                        <!-- Basic slot -->
+                        <tr>
+                            <td class="time">16:00–16:10</td>
+                            <td class="slot">Welcome Back</td>
+                        </tr>
+                        <!-- Invited slot -->
+                        <tr>
+                            <td class="time">16:10–16:40</td>
+                            <td class="slot talk">
+                                <a href="#tabs3" data-toggle="collapse" class="accordion-toggle">
+                                    Sofya Raskhodnikova
+                                    &mdash;
+                                    The Price of Differential Privacy under Continual Observation
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs3">
+                                    We will discuss the accuracy of differentially private mechanisms in the continual release model. A continual release mechanism receives a sensitive dataset as a stream of $T$ inputs and produces, after receiving each input, an output that is accurate for all the inputs received so far.
+                                    In contrast, a batch algorithm receives the data as one batch and produces a single output.
+
+                                    We provide the first strong lower bounds on the error of continual release mechanisms. In particular, for two fundamental problems that are widely studied and used in the batch model, we prove that the worst case error of every continual release algorithm is $\tilde \Omega(T^{1/3})$ times larger than that of the best batch algorithm. Previous work shows only a polylogarithimic (in $T$) gap between the worst case error achievable in these two models; further, for many problems, including the summation of binary attributes, the polylogarithmic gap is tight (Dwork et al., 2010; Chan et al., 2010). Our results show that  problems closely related to summation---specifically, those that require selecting the largest of a set of sums---are fundamentally harder in the continual release model than in the batch model.
+
+                                    Our lower bounds assume only that privacy holds for streams fixed in advance (the "nonadaptive" setting). We also formulate a model that allows for adaptively selected inputs and prove the privacy of several algorithms in that model. In particular we show that our lower bounds are matched by the error of simple algorithms whose privacy holds even for adaptively selected streams. The adaptive model captures dependencies that arise in many applications of continual release.
+
+                                    Based on joint work with Palak Jain, Satchit Sivakumar, and Adam Smith.
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- Invited slot -->
+                        <tr>
+                            <td class="time">16:40–17:10</td>
+                            <td class="slot talk">
+                                <a href="#tabs4" data-toggle="collapse" class="accordion-toggle">
+                                    Yuval Ishai
+                                    &mdash;
+                                    New Techniques for Efficient Secure Computation
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs4">
+                                    Secure computation is a powerful cryptographic primitive, enabling two or more parties to perform joint computations on their secret inputs without revealing the inputs to each other. An appealing application domain is privacy-preserving machine learning, where secure computation is helpful for training and classification tasks involving sensitive data.
+
+                                    Secure computation is known to be generally possible, under standard cryptographic assumptions, since the 1980s. Unfortunately, security does not come for free. In this talk I will survey some recent techniques for minimizing the overhead of secure computation, along with remaining challenges and open problems.
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- Basic slot -->
+                        <tr>
+                            <td class="time">17:10–17:30</td>
+                            <td class="slot">Open Questions</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <!-- Organizers Section -->
     <section id="organizers" class="container content-section text-center">
