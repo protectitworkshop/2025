@@ -280,7 +280,8 @@
 
             #about,
             #speakers,
-            #papers
+            #papers,
+            #organizers
             {
                 width: 100%;
                 padding: 100px 50px 50px 50px;
@@ -289,9 +290,9 @@
             }
 
             #schedule,
-            #organizers,
             #grants,
-            #dates
+            #dates,
+            #previous
             {
                 width: 100%;
                 padding: 100px 50px 50px 50px;
@@ -317,7 +318,7 @@
                 }
             }
 
-            li.organizer {
+            li.event {
                 background-color: lightgrey;
                 border-color: lightgrey;
                 font-size: 18px;
@@ -325,7 +326,7 @@
             }
 
             @media (min-width: 768px) {
-                li.organizer {
+                li.event {
                     background-color: lightgrey;
                     border-color: lightgrey;
                     font-size: 20px;
@@ -333,14 +334,14 @@
                 }
             }
 
-            li.event {
+            li.organizer {
                 background-color: black;
                 font-size: 18px;
                 border-color: black;
             }
 
             @media (min-width: 768px) {
-                li.event {
+                li.organizer {
                     background-color: black;
                     font-size: 20px;
                     border-color: black;
