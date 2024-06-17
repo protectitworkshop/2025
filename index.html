@@ -261,7 +261,7 @@
                         </tr>
                         <!-- Invited slot -->
                         <tr>
-                            <td class="time">16:10–16:40</td>
+                            <td class="time">14:00–15:00</td>
                             <td class="slot talk">
                                 <a href="#tabs3" data-toggle="collapse" class="accordion-toggle">
                                     Invited talk: <span style="font-weight:normal"> Jan Ramon
@@ -270,46 +270,68 @@
                                 </a>
                             </td>
                         </tr>
+                       
+                     
+                        <!-- Basic slot -->
                         <tr>
-                            <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract"  id="tabs3">
-                                    We will discuss the accuracy of differentially private mechanisms in the continual release model. A continual release mechanism receives a sensitive dataset as a stream of $T$ inputs and produces, after receiving each input, an output that is accurate for all the inputs received so far.
-                                    In contrast, a batch algorithm receives the data as one batch and produces a single output.
-
-                                    We provide the first strong lower bounds on the error of continual release mechanisms. In particular, for two fundamental problems that are widely studied and used in the batch model, we prove that the worst case error of every continual release algorithm is $\tilde \Omega(T^{1/3})$ times larger than that of the best batch algorithm. Previous work shows only a polylogarithimic (in $T$) gap between the worst case error achievable in these two models; further, for many problems, including the summation of binary attributes, the polylogarithmic gap is tight (Dwork et al., 2010; Chan et al., 2010). Our results show that  problems closely related to summation---specifically, those that require selecting the largest of a set of sums---are fundamentally harder in the continual release model than in the batch model.
-
-                                    Our lower bounds assume only that privacy holds for streams fixed in advance (the "nonadaptive" setting). We also formulate a model that allows for adaptively selected inputs and prove the privacy of several algorithms in that model. In particular we show that our lower bounds are matched by the error of simple algorithms whose privacy holds even for adaptively selected streams. The adaptive model captures dependencies that arise in many applications of continual release.
-
-                                    Based on joint work with Palak Jain, Satchit Sivakumar, and Adam Smith.
-                                </div>
-                            </td>
+                            <td class="time">15:00–15:30</td>
+                            <td class="slot">Coffee break</td>
                         </tr>
-                        <!-- Invited slot -->
+
                         <tr>
-                            <td class="time">16:40–17:10</td>
+                            <td class="time">15:30 - 17:00  </td>
+                            <td class="slot"><b> Session 2: Differential privacy and security attacks</b> </td>
+                        </tr>
+                        <tr>
+                            <td class="time">15:30–16:00</td>
                             <td class="slot talk">
-                                <a href="#tabs4" data-toggle="collapse" class="accordion-toggle">
-                                    Yuval Ishai
-                                    &mdash;
-                                    New Techniques for Efficient Secure Computation
+                                <a href="#tabs11" data-toggle="collapse" class="accordion-toggle">
+                                    Node Injection Link Stealing Attack.
+                                    <br> <span style="font-weight:normal"> Oualid Zari (EURECOM), Javier Parra-Arnau (Universitat Politècnica de Catalunya), Ayşe Ünsal (EURECOM) and Melek Önen (EURECOM) </span>
                                 </a>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="hiddenRow">
-                                <div class="accordion-body collapse talk-abstract"  id="tabs4">
-                                    Secure computation is a powerful cryptographic primitive, enabling two or more parties to perform joint computations on their secret inputs without revealing the inputs to each other. An appealing application domain is privacy-preserving machine learning, where secure computation is helpful for training and classification tasks involving sensitive data.
-
-                                    Secure computation is known to be generally possible, under standard cryptographic assumptions, since the 1980s. Unfortunately, security does not come for free. In this talk I will survey some recent techniques for minimizing the overhead of secure computation, along with remaining challenges and open problems.
+                                <div class="accordion-body collapse talk-abstract"  id="tabs11">
+                                    In this paper, we present a stealthy and effective attack that exposes privacy vulnerabilities in Graph Neural Networks (GNNs) by inferring private links within graph-structured data. Focusing on dynamic GNNs, we propose to inject new nodes and attach them to a particular target node to infer its private edge information. Our approach significantly enhances the F1 score of the attack beyond the current state-of-the-art benchmarks. Specifically, for the Twitch dataset, our method improves the F1 score by 23.75%, and for the Flickr dataset, it records a remarkable improvement, where the new performance is more than three times better than the state-of-the-art. We also propose and evaluate defense strategies based on differentially private (DP) mechanisms relying on a newly defined DP notion, which, on average, reduce the effectiveness of the attack by approximately 71.9% while only incurring a minimal average utility loss of about 3.2%.
                                 </div>
                             </td>
                         </tr>
-                        <!-- Basic slot -->
+
                         <tr>
-                            <td class="time">17:10–17:30</td>
-                            <td class="slot">Open Questions</td>
+                            <td class="time">16:00–16:30</td>
+                            <td class="slot talk">
+                                <a href="#tabs22" data-toggle="collapse" class="accordion-toggle">
+                                    Secure Latent Dirichlet Allocation.
+                                    <br> <span style="font-weight:normal"> Thijs Veugen (Netherlands Organisation for Applied Scientific Research), Vincent Dunning (Netherlands Organisation for Applied Scientific Research), Michiel Marcus (Netherlands Organisation for Applied Scientific Research) and Bart Kamphorst (Netherlands Organisation for Applied Scientific Research) </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs22">
+                                    Topic modeling refers to a popular set of techniques used to discover hidden topics that occur in a collection of documents. These topics can, for example, be used to categorize documents or label text for further processing. One popular topic modeling technique is Latent Dirichlet Allocation (LDA). In topic modeling scenarios, the documents are often assumed to be in one, centralized dataset. However, sometimes documents are held by different parties, and contain privacy- or commercially-sensitive information that cannot be shared. We present a novel, decentralized approach to train an LDA model securely without having to share any information about the content of the documents with the other parties. We preserve the privacy of the individual parties using secure multi-party computation (MPC), achieving similar accuracy compared to an (insecure) centralised approach. With $1024$-bit Paillier keys, a topic model with $5$ topics and $3000$ words can be trained in around $16$ hours. Furthermore, we show that the solution scales linearly in the total number of words and the number of topics.
+                                </div>
+                            </td>
                         </tr>
 
+                        <tr>
+                            <td class="time">16:30–17:00</td>
+                            <td class="slot talk">
+                                <a href="#tabs33" data-toggle="collapse" class="accordion-toggle">
+                                    Probabilistic Parallel Composition Theorems for Differential Privacy.
+                                    <br> <span style="font-weight:normal"> Àlex Miranda-Pascual (Karlsruhe Institute of Technology, Universitat Politècnica de Catalunya), Javier Parra-Arnau (Universitat Politècnica de Catalunya ) and Thorsten Strufe (Karlsruhe Institute of Technology) </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="hiddenRow">
+                                <div class="accordion-body collapse talk-abstract"  id="tabs33">
+                                    In this short abstract, we present new composition results for (epsilon,delta)-DP that go even further, namely, probabilistic parallel composition. In this new composition scenario, the mechanisms take as input disjoint subsets of the initial database, as in parallel composition, but where the input subsets are chosen randomly instead of deterministically. We provide two theorems with different ways to randomly select the inputs: The first, defined for unbounded DP, samples each record into a single input according to a fixed distribution; while the second, defined for bounded DP, samples subsets of fixed size uniformly. Notably, these new composition methods improve privacy by introducing uncertainty, and allow us to obtain lower privacy parameters than those obtained by the classical parallel composition results. We believe these new techniques can be useful for the future design of DP mechanisms.
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
