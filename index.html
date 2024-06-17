@@ -150,7 +150,66 @@
     <section id="schedule" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-
+            <table>
+    <tr>
+        <th>Time</th>
+        <th>Event</th>
+    </tr>
+    <tr>
+        <td>8:00 - 9:30</td>
+        <td>Registration</td>
+    </tr>
+    <tr>
+        <td>9:30 - 10:30</td>
+        <td>Invited talk 1</td>
+    </tr>
+    <tr>
+        <td>10:30 - 11:00</td>
+        <td>Coffee break</td>
+    </tr>
+    <tr>
+        <td>11:00 - 12:30</td>
+        <td>
+            Session 1: Federated learning and secure computation<br><br>
+            <b>11:00 - 11:30:</b> Bayes’ capacity as a measure for reconstruction attacks in federated learning<br>
+            Natasha Fernandes (Macquarie University), Sayan Biswas (EPFL), Annabelle McIver (Macquarie University), Parastoo Sadeghi (UNSW Canberra), Pedro Faustini (Macquarie University), Mark Dras (Macquarie University) and Catuscia Palamidessi (Inria and Ecole Polytechnique)<br>
+            <i>Abstract: Within the machine learning community, reconstruction attacks are a principal attack of concern and have been identified even in federated learning, which was designed with privacy-preservation in mind. In federated learning, it has been shown that an adversary with knowledge of the machine learning architecture is able to infer the exact value of a training element given an observation of the weight updates performed during stochastic gradient descent. In response to these threats the privacy community recommends the use of differential privacy in the stochastic gradient descent algorithm, termed DP-SGD. However, DP has not yet been formally established as an effective counter-measure against reconstruction attacks. In this paper we formalise the reconstruction threat model using the information-theoretic framework of quantitative information flow. We show that the Bayes' capacity, related to the Sibson mutual information of order infinity, represents a tight upper bound on the leakage of the DP-SGD algorithm to an adversary interested in performing a reconstruction attack. We provide empirical results demonstrating the effectiveness of this measure for comparing mechanisms against reconstruction threats.</i><br><br>
+            <b>11:30 - 12:00:</b> Verifiable cross-silo federated learning<br>
+            Aleksei Korneev (INRIA Lille, University of Lille) and Jan Ramon<br>
+            <i>Abstract: Federated Learning (FL) is a widespread approach that allows training machine learning (ML) models with data distributed across multiple devices. In cross-silo FL, which often appears in domains like healthcare or finance, the number of participants is moderate, and each party typically represents a well-known organization. However, malicious agents may still attempt to disturb the training procedure in order to obtain certain benefits, for example, a biased result or a reduction in computational load. While one can easily detect a malicious agent when data used for training is public, the problem becomes much more acute when it is necessary to maintain the privacy of the training dataset. To address this issue, there is recently growing interest in developing verifiable protocols, where one can check that parties do not deviate from the training procedure and perform computations correctly. In this paper, we conduct a comprehensive analysis of such protocols, and fit them in a taxonomy. We perform a comparison of the efficiency and threat models of various approaches. We next identify research gaps and discuss potential directions for future scientific work.</i><br><br>
+            <b>12:00 - 12:30:</b> Overview on Secure Comparison<br>
+            Quentin Sinh (INRIA Lille) and Jan Ramon (INRIA Lille)<br>
+            <i>Abstract: Introduced by Yao’s Millionaires’ problem, Secure Comparison (SC) allows parties to compare two secrets in a privacy-preserving manner. This article gives an overview of the different SC techniques in various settings such as Secret Sharing (SS) or Homomorphic Encryption (HE).</i>
+        </td>
+    </tr>
+    <tr>
+        <td>12:30 - 14:00</td>
+        <td>Lunch break</td>
+    </tr>
+    <tr>
+        <td>14:00 - 15:00</td>
+        <td>Invited talk 2</td>
+    </tr>
+    <tr>
+        <td>15:00 - 15:30</td>
+        <td>Coffee break</td>
+    </tr>
+    <tr>
+        <td>15:30 - 17:00</td>
+        <td>
+            Session 2: Differential privacy and security attacks<br><br>
+            <b>15:30 - 16:00:</b> Node Injection Link Stealing Attack<br>
+            Oualid Zari (EURECOM), Javier Parra-Arnau (Universitat Politècnica de Catalunya), Ayşe Ünsal (EURECOM) and Melek Önen (EURECOM)<br>
+            <i>Abstract: In this paper, we present a stealthy and effective attack that exposes privacy vulnerabilities in Graph Neural Networks (GNNs) by inferring private links within graph-structured data. Focusing on dynamic GNNs, we propose to inject new nodes and attach them to a particular target node to infer its private edge information. Our approach significantly enhances the F1 score of the attack beyond the current state-of-the-art benchmarks. Specifically, for the Twitch dataset, our method improves the F1 score by 23.75%, and for the Flickr dataset, it records a remarkable improvement, where the new performance is more than three times better than the state-of-the-art. We also propose and evaluate defense strategies based on differentially private (DP) mechanisms relying on a newly defined DP notion, which, on average, reduce the effectiveness of the attack by approximately 71.9% while only incurring a minimal average utility loss of about 3.2%.</i><br><br>
+            <b>16:00 - 16:30:</b> Secure Latent Dirichlet Allocation<br>
+            Thijs Veugen (Netherlands Organisation for Applied Scientific Research), Vincent Dunning (Netherlands Organisation for Applied Scientific Research), Michiel Marcus (Netherlands Organisation for Applied Scientific Research) and Bart Kamphorst (Netherlands Organisation for Applied Scientific Research)<br>
+            <i>Abstract: Topic modeling refers to a popular set of techniques used to discover hidden topics that occur in a collection of documents. These topics can, for example, be used to categorize documents or label text for further processing. One popular topic modeling technique is Latent Dirichlet Allocation (LDA). In topic modeling scenarios, the documents are often assumed to be in one, centralized dataset. However, sometimes documents are held by different parties, and contain privacy- or commercially-sensitive information that cannot be shared. We present a novel, decentralized approach to train an LDA model securely without having to share any information about the content of the documents with the other parties. We preserve the privacy of the individual parties using secure multi-party computation (MPC), achieving similar accuracy compared to an (insecure) centralised approach. With $1024$-bit Paillier keys, a topic model with $5$ topics and $3000$ words can be trained in around $16$ hours. Furthermore, we show that the solution scales linearly in the total number of words and the number of topics.</i><br><br>
+            <b>16:30 - 17:30:</b> Probabilistic Parallel Composition Theorems for Differential Privacy<br>
+            Àlex Miranda-Pascual (Karlsruhe Institute of Technology, Universitat Politècnica de Catalunya), Javier Parra-Arnau (Universitat Politècnica de Catalunya ) and Thorsten Strufe (Karlsruhe Institute of Technology)<br>
+            <i>Abstract: In this short abstract, we present new composition results for (epsilon,delta)-DP that go even further, namely, probabilistic parallel composition. In this new composition scenario, the mechanisms take as input disjoint subsets of the initial database, as in parallel composition, but where the input subsets are chosen randomly instead of deterministically. We provide two theorems with different ways to randomly select the inputs: The first, defined for unbounded DP, samples each record into a single input according to a fixed distribution; while the second, defined for bounded DP, samples subsets of fixed size uniformly. Notably, these new composition methods improve privacy by introducing uncertainty, and allow us to obtain lower privacy parameters than those obtained by the classical parallel composition results. We believe these new techniques can be useful for the future design of DP mechanisms.</i>
+        </td>
+    </tr>
+</table>
                 
             </div>
         </div>
@@ -218,7 +277,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Contact us: <a href="mailto:ppml2022@googlegroups.com">protectitworkshop@gmail.com</a></p>
+            <p>Contact us: <a href="mailto:protectitworkshop@gmail.com">protectitworkshop@gmail.com</a></p>
             <br />
         </div>
     </footer>
